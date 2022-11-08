@@ -1,0 +1,13 @@
+
+
+.header-contenedor {
+    display: flex;
+    background-color: red !important;
+    justify-content: center;
+
+}
+
+.logoimagen { 
+    height: 150px;
+    width: auto;
+}
