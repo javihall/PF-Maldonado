@@ -54,9 +54,10 @@
   border-bottom: 2px solid black;
 }
 
+/* hacer listas de variables*/
 .footer {
   width: 100%;
-  background-color: white;
+  background-color: #F9F9F9;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -87,13 +88,12 @@ footer {
 
 .col {
   min-width: 250px;
-  color: rgb(78, 78, 78);
-  /* padding: 0 2rem; */
+  color: #212121;
   max-width: 380px;
 }
 
 .col h3 {
-  color: black;
+  color: #050505;
   font-size: 21px;
   padding-top: 10px;
 }
@@ -109,7 +109,7 @@ footer {
 }
 
 .sm-icons li a i:hover {
-  color: #151515;
+  color: #030303;
 }
 
 /* correccion para bootstrap */
@@ -117,7 +117,6 @@ ul {
   padding-left: 0;
 }
 
-/* fin correccion para bootstrap */
 .navegacion-list li,
 .info-contacto-list li {
   list-style: none;
@@ -125,13 +124,13 @@ ul {
 
 .navegacion-list li a {
   text-decoration: none;
-  color: black;
+  color: #030303;
   transition: all 0.5s;
 }
 
 .navegacion-list li a:hover {
   text-decoration: underline;
-  background-color: #d8d8d8;
+  background-color: #F5F5F5;
 }
 
 .info-contacto-list li i {
@@ -155,7 +154,7 @@ ul {
 
 .email_enviar_btn {
   margin-top: 10px;
-  color: black;
+  color: #030303;
   padding: 1px 12px;
   font-weight: bold;
   cursor: pointer;
@@ -169,20 +168,20 @@ ul {
 }
 
 .email_enviar_btn:hover {
-  background: black;
-  color: white;
+  background: #030303;
+  color: #F9F9F9;
   border: 1px solid #f7c2b0;
 }
 
 /***********FOOTER copy***********/
 .footer_copy {
   display: flex;
-  color: rgb(34, 33, 33);
+  color: #030303;
   justify-content: center;
   align-items: center;
   min-height: 61px;
   flex-wrap: wrap;
-  background-color: #f6f6f6;
+  background-color: #EAEAEA;
 }
 
 .logo-leon {

@@ -1,6 +1,8 @@
+@import "../base/listas";
+
 .footer {
     width: 100%;
-    background-color: white;
+    background-color: nth($colores , 11);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -33,14 +35,12 @@ footer {
 
 .col {
     min-width: 250px;
-    color: rgb(78, 78, 78);
-    /* padding: 0 2rem; */
+    color: nth($colores , 8);
     max-width: 380px;
-
 }
 
 .col h3 {
-    color: black;
+    color: nth($colores , 5);
     font-size: 21px;
     padding-top: 10px;
 }
@@ -51,20 +51,18 @@ footer {
 }
 
 .sm-icons li a i {
-    color: #f7c2b0;
+    color: nth($colores , 2);
     font-size: 24px;
 }
 
 .sm-icons li a i:hover {
-    color: #151515;
+    color: nth($colores , 4);
 }
 
 /* correccion para bootstrap */
 ul {
     padding-left: 0;
 }
-
-/* fin correccion para bootstrap */
 
 .navegacion-list li,
 .info-contacto-list li {
@@ -73,19 +71,18 @@ ul {
 
 .navegacion-list li a {
     text-decoration: none;
-    color: black;
+    color: nth($colores , 4);
     transition: all 0.5s;
 }
 
 .navegacion-list li a:hover {
     text-decoration: underline;
-    background-color: #d8d8d8;
+    background-color: nth($colores , 12);
 }
 
 .info-contacto-list li i {
-    color: #f7c2b0;
+    color: nth($colores , 2);
     font-size: 18px;
-
     padding: 10px;
 }
 
@@ -95,7 +92,7 @@ ul {
     margin: 10px 0;
     border-top-width: 3px;
     border-top-style: solid;
-    border-top-color: #ffd8cb;
+    border-top-color: nth($colores , 1);
     border-left-width: 0px;
     border-right-width: 0px;
     border-bottom-width: 0px;
@@ -104,35 +101,35 @@ ul {
 
 .email_enviar_btn {
     margin-top: 10px;
-    color: black;
+    color: nth($colores , 4);
     padding: 1px 12px;
     font-weight: bold;
     cursor: pointer;
     transition: all 0.3s ease;
     border-radius: 20px;
     border: 1px solid black;
-    background: #ffd8cb;
+    background: nth($colores , 1);
     text-align: center;
     text-decoration: none;
     font-size: 14px;
 }
 
 .email_enviar_btn:hover {
-    background: black;
-    color: white;
-    border: 1px solid #f7c2b0;
+    background: nth($colores , 4);
+    color: nth($colores , 11);
+    border: 1px solid nth($colores , 2);
 }
 
 /***********FOOTER copy***********/
 
 .footer_copy {
     display: flex;
-    color: #222121;
+    color: nth($colores , 4);
     justify-content: center;
     align-items: center;
     min-height: 61px;
     flex-wrap: wrap;
-    background-color: #f6f6f6;
+    background-color: nth($colores , 15);
 }
 
 .logo-leon {
