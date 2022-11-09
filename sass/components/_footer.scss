@@ -1,0 +1,153 @@
+.footer {
+    width: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 10px;
+}
+
+footer {
+    box-shadow: 1px 10px 28px -4px rgba(255, 216, 203, 0.73);
+    -webkit-box-shadow: 1px 10px 28px -4px rgba(255, 216, 203, 0.73);
+    -moz-box-shadow: 1px 10px 28px -4px rgba(255, 216, 203, 0.73);
+}
+
+.footer_container {
+
+    width: 70%;
+    min-height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    width: 100%;
+}
+
+.col {
+    min-width: 250px;
+    color: rgb(78, 78, 78);
+    /* padding: 0 2rem; */
+    max-width: 380px;
+
+}
+
+.col h3 {
+    color: black;
+    font-size: 21px;
+    padding-top: 10px;
+}
+
+.sm-icons li {
+    display: inline-block;
+    margin: 5px;
+}
+
+.sm-icons li a i {
+    color: #f7c2b0;
+    font-size: 24px;
+}
+
+.sm-icons li a i:hover {
+    color: #151515;
+}
+
+/* correccion para bootstrap */
+ul {
+    padding-left: 0;
+}
+
+/* fin correccion para bootstrap */
+
+.navegacion-list li,
+.info-contacto-list li {
+    list-style: none;
+}
+
+.navegacion-list li a {
+    text-decoration: none;
+    color: black;
+    transition: all 0.5s;
+}
+
+.navegacion-list li a:hover {
+    text-decoration: underline;
+    background-color: #d8d8d8;
+}
+
+.info-contacto-list li i {
+    color: #f7c2b0;
+    font-size: 18px;
+
+    padding: 10px;
+}
+
+.line_footer {
+    max-width: 100%;
+    width: 90px;
+    margin: 10px 0;
+    border-top-width: 3px;
+    border-top-style: solid;
+    border-top-color: #ffd8cb;
+    border-left-width: 0px;
+    border-right-width: 0px;
+    border-bottom-width: 0px;
+    opacity: 1;
+}
+
+.email_enviar_btn {
+    margin-top: 10px;
+    color: black;
+    padding: 1px 12px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-radius: 20px;
+    border: 1px solid black;
+    background: #ffd8cb;
+    text-align: center;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.email_enviar_btn:hover {
+    background: black;
+    color: white;
+    border: 1px solid #f7c2b0;
+}
+
+/***********FOOTER copy***********/
+
+.footer_copy {
+    display: flex;
+    color: #222121;
+    justify-content: center;
+    align-items: center;
+    min-height: 61px;
+    flex-wrap: wrap;
+    background-color: #f6f6f6;
+}
+
+.logo-leon {
+    width: 70px;
+}
+
+/* elimina imagen logo del footer para mobile */
+@media all and (max-width: 768px) {
+    .logo-leon {
+        display: none;
+    }
+
+    .footer_copy small {
+        text-align: center;
+    }
+}
+
+/*********** END FOOTER copy***********/
