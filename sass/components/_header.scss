@@ -1,0 +1,52 @@
+@import "../base/variables";
+@import "../base/listas";
+
+.header-contenedor {
+    display: flex;
+    // background-color: $bg-gral;
+    justify-content: center;
+    width: 100%;
+    background-color: red;
+
+}
+
+.logoimagen { 
+    height: 140px;
+    width: auto;
+    border-radius: 30px;
+
+}
+
+.bg_color {
+    /* nth nombre de la lista, numero del color*/
+    background-color: nth($colores , 1 );
+}
+
+.width-header {
+    width: 70%;
+}
+
+.header-end {
+    justify-content: flex-end;
+    flex-grow: 0;
+}
+
+.nav_estilo li a {
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.4px;
+    font-weight: 600;
+    padding: 0 2px;
+}
+
+.hover-nav-links li a:hover {
+    border-radius: 5px;
+    background-color: black;
+    color: whitesmoke;
+}
+
+.current_page {
+    border-bottom: 2px solid black;
+}
