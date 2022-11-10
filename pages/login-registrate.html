@@ -4,11 +4,11 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Contacto</title>
-     <!-- Google fonts -->
-     <link rel="preconnect" href="https://fonts.googleapis.com">
-     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <title>Iniciar sesion/Registrate</title>
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <!-- CDN de Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
@@ -54,7 +54,8 @@
                                 <a class="nav-link" href="#">Nosotros</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" aria-current="page" href="pages/login-registrate.html"><i class="fa-solid fa-user"></i></a>
+                                <a class="nav-link" aria-current="page" href="login-registrate.html"><i
+                                        class="fa-solid fa-user"></i></a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link cart-icon" aria-current="page" href="#"><i
@@ -64,7 +65,8 @@
                         </ul>
 
                         <form class="d-flex" role="search">
-                            <input class="form-control me-2 buscar-input" type="search" placeholder="Buscar" aria-label="Buscar">
+                            <input class="form-control me-2 buscar-input" type="search" placeholder="Buscar"
+                                aria-label="Buscar">
                             <button class="btn btn-outline-success boton-search" type="submit"><i
                                     class="fa-solid fa-magnifying-glass"></i></button>
                         </form>
@@ -75,84 +77,76 @@
         </div>
     </header>
 
-  <!------------MAIN------------>
-  <main>
-    <!-- Imagen Contactanos  -->
-    <section>
-        <div class="containter-main-banner">
-            <img class="img-contact" src="Img/contact.jpg" alt="">
-            <h1 class="h1-banner">Contactanos</h1>
+    <!------------MAIN------------>
+    <main class="main">
+        <div class="main-containter">
+            <!-- Imagen Contactanos  -->
+            <section>
+                <div class="containter-main-banner">
+                    <img class="img-contact" src="Img/contact.jpg" alt="">
+                    <h1 class="h1-banner">Iniciar sesion/Registrate</h1>
+                </div>
+            </section>
+            <!-- Breadscrum -->
+
+            <nav class="breadcrumb-contenedor" aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="../index.html">Home</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Iniciar sesion-Registrate</li>
+                </ol>
+            </nav>
+
+            <!-- Ingresar -->
+            <div class="contenedor-login-registrate">
+                <section class="containter-form-login">
+                    <h2>Ingresar</h2>
+                    <form class="contact__form">
+                        <div class="input-group-login">
+                            <label for="">Usuario</label>
+                            <input type="text">
+                        </div>
+                        <div class="input-group-login">
+                            <label for="">Contraseña</label>
+                            <input type="password">
+                        </div>
+                        <button>Iniciar sesion</button>
+                        <button>Iniciar sesion con Google</button>
+                    </form>
+                </section>
+
+                <!-- Crear cuenta -->
+                <section class="containter-form-registrate">
+                    <h2>¿No tenes cuenta?</h2>
+                    <p>Crea tu cuenta</p>
+                    <p>Todos los campos con * son requeridos</p>
+                    <form class="contact__form">
+                        <div class="input-group-registrate">
+                            <label for="">Nombre*:</label>
+                            <input type="text" required>
+                        </div>
+                        <div class="input-group-registrate">
+                            <label for="">Mail*:</label>
+                            <input type="text" required>
+                        </div>
+                        <div class="input-group-registrate">
+                            <label for="">Telefono:</label>
+                            <input type="text">
+                        </div>
+                        <div class="input-group-registrate">
+                            <label for="">Contraseña*:</label>
+                            <input type="text" required>
+                        </div>
+                        <div class="input-group-registrate">
+                            <label for="">Confirmar contraseña*:</label>
+                            <input type="text" required>
+                        </div>
+                        <button>Crear cuenta</button>
+                    </form>
+                </section>
+            </div>
         </div>
-    </section>
-    <!-- Breadscrum -->
-    <ul class="breadcrumbs">
-        <li class="breadcrumbs__item">
-            <a href="Index.html" class="breadcrumbs__link">Home </a>/
-        </li>
-        <li class="breadcrumbs__item">
-            <a href="contacto.html" class="breadcrumbs__link breadcrumbs__link--active">Contacto</a>
-        </li>
-    </ul>
-
-    <!-- Formulario contactanos -->
-    <section class="containter-form">
-        <h2>Contactanos</h2>
-        <p>Todos los campos con * son requeridos</p>
-        <div>
-            <form class="contact__form">
-                <div class="input-group">
-                    <label for="">Nombre*:</label>
-                    <input type="text" required>
-                </div>
-                <div class="input-group">
-                    <label for="">Apellido*:</label>
-                    <input type="text" required>
-                </div>
-                <div class="input-group">
-                    <label for="">Telefono:</label>
-                    <input type="number">
-                </div>
-                <div class="input-group">
-                    <label for="">Mail*:</label>
-                    <input type="email" required>
-                </div>
-                <div class="input-group">
-                    <label for="">Mensaje*:</label>
-                    <input type="text" required>
-                </div>
-                <button type="submit">Enviar</button>
-            </form>
-        </div>
-    </section>
-
-    <!-- Otros datos -->
-    <section class="contacto-info">
-        <h2>Direccion</h2>
-        <img src="Img/direccion.png" alt="">
-        <p>Washington, USA 6036 Richmond hwy., Alexandria, VA, 2230</p>
-        <hr>
-        <h2>Telefono</h2>
-        <img src="Img/telefono.png" alt="">
-        <p>(123) 456-78-90, (123) 456-78-91</p>
-        <hr>
-        <h2>Mail</h2>
-        <img src="Img/mail.png" alt="">
-        <p>info@demolink.org</p>
-        <hr>
-        <h2>Horario</h2>
-        <img src="Img/horario.png" alt="">
-        <p>Mon-Fri: 9 am – 6 pm<br>Saturday: 9 am – 4 pm<br>Sunday: Closed</p>
-        <hr>
-        <!-- Mapa Google -->
-        <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d365605.4618984023!2d-64.62340034836818!3d-31.641418299417214!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432a28f032e839f%3A0x75ad8743d2604827!2sNails%20%26%20Co.%20-%20Nueva%20C%C3%B3rdoba!5e0!3m2!1sen!2sar!4v1664854294368!5m2!1sen!2sar"
-            width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"></iframe>
-
-    </section>
-
-</main>
-<!-- FIN MAIN  -->
+    </main>
+    <!-- FIN MAIN  -->
 
     <!------------FOOTER------------>
     <footer>

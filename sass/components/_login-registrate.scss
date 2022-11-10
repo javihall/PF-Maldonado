@@ -1,0 +1,26 @@
+@import "../base/listas";
+
+
+.breadcrumb-contenedor {
+    margin-top: 25px;
+}
+
+.contenedor-login-registrate {
+    display: flex;
+    padding: 15px 0;
+}
+
+.containter-form-login, .containter-form-registrate {
+    width: 50%;
+    
+}
+
+
+.input-group-login input, .input-group-registrate input{
+    width: 90%;
+    border-radius: 5px;
+    border: 1px solid;
+    padding: 12px 19px;
+    margin-bottom: 20px;
+    display: block;
+}

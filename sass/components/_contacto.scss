@@ -1,5 +1,49 @@
-
+@import "../base/listas";
 
 .breadcrumb-contenedor {
     margin-top: 25px;
+}
+
+.contenedor-contacto {
+    display: flex;
+    padding: 15px 0;
+}
+
+.containter-formulario, .container-contacto-info {
+    width: 50%;
+}
+
+.contact__form {
+    
+}
+
+.input-groupp input, textarea {
+    width: 90%;
+    border-radius: 5px;
+    border: 1px solid;
+    padding: 12px 19px;
+    margin-bottom: 20px;
+    display: block;
+}
+
+.input-groupp label {
+    margin-bottom: 15px;
+}
+.input-groupp textarea {
+    resize: none;
+}
+
+.submit-boton {
+    width: 40%;
+    height: 35px;
+}
+
+.cajas-info {
+display: flex;
+}
+
+.cajas-info i {
+    padding-right: 16px;
+    font-size: 20px;
+    color: nth($colores , 2);
 }

@@ -94,66 +94,79 @@
             <nav class="breadcrumb-contenedor" aria-label="breadcrumb">
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item"><a href="../index.html">Home</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">Library</li>
+                    <li class="breadcrumb-item active" aria-current="page">Contacto</li>
                 </ol>
             </nav>
 
             <!-- Formulario contactanos -->
-            <section class="containter-form">
-                <h2>Contactanos</h2>
-                <p>Todos los campos con * son requeridos</p>
-                <div>
-                    <form class="contact__form">
-                        <div class="input-group">
-                            <label for="">Nombre*:</label>
-                            <input type="text" required>
-                        </div>
-                        <div class="input-group">
-                            <label for="">Apellido*:</label>
-                            <input type="text" required>
-                        </div>
-                        <div class="input-group">
-                            <label for="">Telefono:</label>
-                            <input type="number">
-                        </div>
-                        <div class="input-group">
-                            <label for="">Mail*:</label>
-                            <input type="email" required>
-                        </div>
-                        <div class="input-group">
-                            <label for="">Mensaje*:</label>
-                            <input type="text" required>
-                        </div>
-                        <button type="submit">Enviar</button>
-                    </form>
-                </div>
-            </section>
+            <div class="contenedor-contacto">
+                <section class="containter-formulario">
 
-            <!-- Otros datos -->
-            <section class="contacto-info">
-                <h2>Direccion</h2>
-                <img src="Img/direccion.png" alt="">
-                <p>Washington, USA 6036 Richmond hwy., Alexandria, VA, 2230</p>
-                <hr>
-                <h2>Telefono</h2>
-                <img src="Img/telefono.png" alt="">
-                <p>(123) 456-78-90, (123) 456-78-91</p>
-                <hr>
-                <h2>Mail</h2>
-                <img src="Img/mail.png" alt="">
-                <p>info@demolink.org</p>
-                <hr>
-                <h2>Horario</h2>
-                <img src="Img/horario.png" alt="">
-                <p>Mon-Fri: 9 am – 6 pm<br>Saturday: 9 am – 4 pm<br>Sunday: Closed</p>
-                <hr>
-                <!-- Mapa Google -->
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d365605.4618984023!2d-64.62340034836818!3d-31.641418299417214!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432a28f032e839f%3A0x75ad8743d2604827!2sNails%20%26%20Co.%20-%20Nueva%20C%C3%B3rdoba!5e0!3m2!1sen!2sar!4v1664854294368!5m2!1sen!2sar"
-                    width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>
 
-            </section>
+                    <h2>Contactanos</h2>
+                    <p>Todos los campos con * son requeridos</p>
+                    <div>
+                        <form class="contact__form">
+                            <div class="input-groupp">
+                                <label for="">Nombre*:</label>
+                                <input aria-required="true" placeholder="Nombre" type="text" required>
+                            </div>
+                            <div class="input-groupp">
+                                <label for="">Apellido*:</label>
+                                <input aria-required="true" placeholder="Apellido" type="text" required>
+                            </div>
+                            <div class="input-groupp">
+                                <label for="">Telefono:</label>
+                                <input placeholder="Telefono" type="text">
+                            </div>
+                            <div class="input-groupp">
+                                <label for="" class="formulario-label">Mail*:</label>
+                                <input aria-required="true" placeholder="Mail" type="email" required>
+                            </div>
+                            <div class="input-groupp">
+
+                                <label for="">Mensaje*:</label>
+                                <textarea aria-required="true" name="Mensaje" id="" cols="30" rows="10"></textarea>
+                            </div>
+                            <button class="email_enviar_btn submit-boton" type="submit">Enviar</button>
+                        </form>
+                    </div>
+                </section>
+
+                <!-- Otros datos -->
+                <section class="container-contacto-info">
+
+                    <h2>Direccion</h2>
+                    <div class="cajas-info"><i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+                        <p>Washington, USA 6036 Richmond hwy., Alexandria, VA, 2230</p>
+                    </div>
+
+                    <hr class="line_footer">
+                    <h2>Telefono</h2>
+                    <div class="cajas-info"><i class="fa-solid fa-phone" aria-hidden="true"></i>
+                        <p>(123) 456-78-90, (123) 456-78-91</p>
+                    </div>
+
+                    <hr class="line_footer">
+                    <h2>Mail</h2>
+                    <div class="cajas-info"><i class="fa-regular fa-envelope" aria-hidden="true"></i>
+                        <p>info@demolink.org</p>
+                    </div>
+
+                    <hr class="line_footer">
+                    <h2>Horario</h2>
+                    <div class="cajas-info"><i class="fa-solid fa-clock"></i>
+                        <p>Mon-Fri: 9 am – 6 pm<br>Saturday: 9 am – 4 pm<br>Sunday: Closed</p>
+                    </div>
+
+                    <!-- Mapa Google -->
+                    <iframe title="google map"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d365605.4618984023!2d-64.62340034836818!3d-31.641418299417214!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432a28f032e839f%3A0x75ad8743d2604827!2sNails%20%26%20Co.%20-%20Nueva%20C%C3%B3rdoba!5e0!3m2!1sen!2sar!4v1664854294368!5m2!1sen!2sar"
+                        width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+                </section>
+            </div>
         </div>
     </main>
     <!-- FIN MAIN  -->
