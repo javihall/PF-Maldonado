@@ -1,0 +1,239 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Detalle del producto</title>
+     <!-- Google fonts -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <!-- CDN de Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <!-- Mi CSS -->
+    <link rel="stylesheet" href="../css/style.css">
+    <!-- font icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="header-contenedor">
+
+
+            <nav class="navbar navbar-expand-lg bg_color width-header">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="../index.html">
+                        <div class="logo-contenedor">
+                            <img class="logoimagen" src="../img/Logo1.png" alt="">
+                        </div>
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse header-end" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0 hover-nav-links nav_estilo">
+                            <li class="nav-item">
+                                <a class="nav-link" href="../index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Tienda</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contacto.html">Contacto</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="faq.html">FAQ</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Nosotros</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="login-registrate.html"><i class="fa-solid fa-user"></i></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link cart-icon" aria-current="page" href="#"><i
+                                        class="fa-solid fa-cart-shopping"></i></a>
+                            </li>
+
+                        </ul>
+
+                        <form class="d-flex" role="search">
+                            <input class="form-control me-2 buscar-input" type="search" placeholder="Buscar" aria-label="Buscar">
+                            <button class="btn btn-outline-success boton-search" type="submit"><i
+                                    class="fa-solid fa-magnifying-glass"></i></button>
+                        </form>
+
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+   <!------------MAIN------------>
+   <main>
+    <!-- Breadscrum -->
+    <ul class="breadcrumbs">
+        <li class="breadcrumbs__item">
+            <a href="Index.html" class="breadcrumbs__link">Home </a>/
+        </li>
+        <li class="breadcrumbs__item">
+            <a href="Index.html" class="breadcrumbs__link">Esmaltes </a>/
+        </li>
+        <li class="breadcrumbs__item">
+            <a href="Index.html" class="breadcrumbs__link">Cuvage </a>/
+        </li>
+        <li class="breadcrumbs__item">
+            <a href="contacto.html" class="breadcrumbs__link breadcrumbs__link--active">ESMALTE SEMI CUVAGE 6ML</a>
+        </li>
+    </ul>
+
+
+    <!-- Imagenes/carousel PDP  -->
+    <section>
+        <img src="Img/pdp1.jpg" alt="">
+        <img src="Img/pdp2.png" alt="">
+        <img src="Img/pdp3.png" alt="">
+        <img src="Img/pdp4.png" alt="">
+
+    </section>
+
+    <!-- Detalle del producto -->
+
+    <h1>ESMALTE SEMI CUVAGE 6ML</h1>
+    <p>$500</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit magni soluta voluptatum libero accusamus,
+        ipsa sapiente sed minima dolor possimus quas nam consequatur dolore voluptatem cumque quibusdam quo alias.
+        Exercitationem?</p>
+
+    <form action="">
+        <label for="">Cantidad</label>
+        <Button>-</Button>
+        <input type="text">
+        <button>+</button>
+
+        <Button type="submit">Agregar al carrito</Button>
+    </form>
+
+
+    <!-- Productos relacionados Carousel -->
+    <section>
+        <h2>PRODUCTOS RELACIONADOS</h2>
+        <div>
+            <div class="cards-product">
+                <a href="PDP.html">
+                    <div>
+                        <img class="img-cards" src="Img/producto1.jpg" alt="">
+                    </div>
+
+                    <p>Nombre del producto</p>
+                    <p>$120</p>
+                </a>
+            </div>
+            <div class="cards-product">
+                <a href="PDP.html">
+                    <div>
+                        <img class="img-cards" src="Img/producto2.png" alt="">
+                    </div>
+
+                    <p>Nombre del producto</p>
+                    <p>$120</p>
+                </a>
+            </div>
+            <div class="cards-product">
+                <a href="PDP.html">
+                    <div>
+                        <img class="img-cards" src="Img/producto3.png" alt="">
+                    </div>
+
+                    <p>Nombre del producto</p>
+                    <p>$120</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+</main>
+<!-- FIN MAIN  -->
+
+    <!------------FOOTER------------>
+    <footer>
+        <div class="footer">
+            <!-- FOOTER PRINCIPAL -->
+
+            <div class="footer_container">
+                <div class="row">
+
+                    <div class="col">
+                        <h3>Navegacion</h3>
+                        <hr class="line_footer">
+                        <ul class="navegacion-list">
+                            <li><a href="#">Productos</a></li>
+                            <li><a href="contacto.html">Contactos</a></li>
+                            <li><a href="faq.html">Preguntas frecuentes</a></li>
+                            <li><a href="#">Nosotros</a></li>
+                            <li><a href="Login-registrate.html">Crear cuenta/Iniciar sesión</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col">
+                        <h3>Informacion del contacto</h3>
+                        <hr class="line_footer">
+                        <ul class="info-contacto-list">
+                            <li><i class="fa-solid fa-location-dot" aria-hidden="true"></i>Washington, USA 6036 Richmond
+                                hwy.,
+                                Alexandria, VA, 2230
+                            </li>
+                            <li><i class="fa-solid fa-phone" aria-hidden="true"></i>+1 (234) 567 8901</li>
+                            <li><i class="fa-regular fa-envelope" aria-hidden="true"></i>info@demolink.org</li>
+                        </ul>
+                    </div>
+
+                    <div class="col">
+                        <h3>Redes sociales</h3>
+                        <hr class="line_footer">
+                        <ul class="sm-icons">
+                            <li><a href="#"><i aria-label="facebook" role="img" class="fa-brands fa-facebook"></i></a>
+                            </li>
+                            <li><a href="#"><i aria-label="twitter" role="img" class="fa-brands fa-twitter"></i></a>
+                            </li>
+                            <li><a href="#"><i aria-label="linkedin" role="img" class="fa-brands fa-linkedin"></i></a>
+                            </li>
+                            <li><a href="#"><i aria-label="instagram" role="img" class="fa-brands fa-instagram"></i></a>
+                            </li>
+                        </ul>
+
+                        <h3>Suscribite a nuestro boletin</h3>
+                        <hr class="line_footer">
+                        <form action="">
+                            <label for="email">Email:</label>
+                            <input type="text" placeholder="email">
+                            <button class="email_enviar_btn">Enviar</button>
+                        </form>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- FOOTER COPYRIGHT  -->
+        <div class="footer_copy">
+            <img class="logo-leon" src="../img/Logo2.png" alt="leon mayorista logo">
+            <small>&copy; COPYRIGHT - 2022 <b>LEON</b> TODOS LOS DERECHOS RESERVADOS.</small>
+        </div>
+
+    </footer>
+
+
+    <!-- CDN para que funcionen los componentes de bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

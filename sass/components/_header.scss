@@ -12,10 +12,9 @@
 
 .header-contenedor {
     display: flex;
-    // background-color: $bg-gral;
     justify-content: center;
     width: 100%;
-    background-color: red;
+    background-color: nth($colores , 1 );
 
 }
 
@@ -27,7 +26,6 @@
 }
 
 .bg_color {
-    /* nth nombre de la lista, numero del color*/
     background-color: nth($colores , 1 );
 }
 
@@ -42,7 +40,7 @@
 
 .nav_estilo li a {
     text-decoration: none;
-    color: black;
+    color: nth($colores , 4 );
     font-size: 16px;
     line-height: 20px;
     letter-spacing: 0.4px;
@@ -52,10 +50,59 @@
 
 .hover-nav-links li a:hover {
     border-radius: 5px;
-    background-color: black;
-    color: whitesmoke;
+    background-color: nth($colores , 4 );
+    color: nth($colores , 11);
 }
 
 .current_page {
-    border-bottom: 2px solid black;
+    border-bottom: 2px solid nth($colores , 4 );
+}
+
+.cart-icon {
+    margin-right: 25px;
+}
+
+.boton-search {
+    background-color: transparent;
+    border: 1px nth($colores , 4)solid;
+    padding: 2px 4px;
+    width: 32px;
+    cursor: pointer;
+    margin: 4px;
+    border-radius: 5px;
+    color: nth($colores , 4);
+}
+
+.boton-search:hover {
+    background-color: nth($colores , 4);
+    color: nth($colores , 11);
+    border: nth($colores , 11);
+ }
+
+ .boton-search:active {
+    background-color: nth($colores , 4) !important;
+    color: nth($colores , 11);
+    border: nth($colores , 11);
+ }
+
+ .buscar-input {
+    margin: 4px;
+    padding: 2px;
+    border: none;
+    border-bottom: 1px black solid;
+    width: 70%;
+    background: transparent;
+    border-radius: 0;
+}
+
+.buscar-input:focus {
+    margin: 4px;
+    padding: 2px;
+    border: none;
+    border-bottom: 1px black solid;
+    width: 70%;
+    background: transparent;
+    border-radius: 0;
+    box-shadow: none;
+
 }

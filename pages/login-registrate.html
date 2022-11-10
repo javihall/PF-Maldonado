@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contacto</title>
+     <!-- Google fonts -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <!-- CDN de Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <!-- Mi CSS -->
+    <link rel="stylesheet" href="../css/style.css">
+    <!-- font icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="header-contenedor">
+
+
+            <nav class="navbar navbar-expand-lg bg_color width-header">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="../index.html">
+                        <div class="logo-contenedor">
+                            <img class="logoimagen" src="../img/Logo1.png" alt="">
+                        </div>
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse header-end" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0 hover-nav-links nav_estilo">
+                            <li class="nav-item">
+                                <a class="nav-link" href="../index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Tienda</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link current_page" aria-current="page" href="contacto.html">Contacto</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="faq.html">FAQ</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Nosotros</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="pages/login-registrate.html"><i class="fa-solid fa-user"></i></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link cart-icon" aria-current="page" href="#"><i
+                                        class="fa-solid fa-cart-shopping"></i></a>
+                            </li>
+
+                        </ul>
+
+                        <form class="d-flex" role="search">
+                            <input class="form-control me-2 buscar-input" type="search" placeholder="Buscar" aria-label="Buscar">
+                            <button class="btn btn-outline-success boton-search" type="submit"><i
+                                    class="fa-solid fa-magnifying-glass"></i></button>
+                        </form>
+
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+  <!------------MAIN------------>
+  <main>
+    <!-- Imagen Contactanos  -->
+    <section>
+        <div class="containter-main-banner">
+            <img class="img-contact" src="Img/contact.jpg" alt="">
+            <h1 class="h1-banner">Contactanos</h1>
+        </div>
+    </section>
+    <!-- Breadscrum -->
+    <ul class="breadcrumbs">
+        <li class="breadcrumbs__item">
+            <a href="Index.html" class="breadcrumbs__link">Home </a>/
+        </li>
+        <li class="breadcrumbs__item">
+            <a href="contacto.html" class="breadcrumbs__link breadcrumbs__link--active">Contacto</a>
+        </li>
+    </ul>
+
+    <!-- Formulario contactanos -->
+    <section class="containter-form">
+        <h2>Contactanos</h2>
+        <p>Todos los campos con * son requeridos</p>
+        <div>
+            <form class="contact__form">
+                <div class="input-group">
+                    <label for="">Nombre*:</label>
+                    <input type="text" required>
+                </div>
+                <div class="input-group">
+                    <label for="">Apellido*:</label>
+                    <input type="text" required>
+                </div>
+                <div class="input-group">
+                    <label for="">Telefono:</label>
+                    <input type="number">
+                </div>
+                <div class="input-group">
+                    <label for="">Mail*:</label>
+                    <input type="email" required>
+                </div>
+                <div class="input-group">
+                    <label for="">Mensaje*:</label>
+                    <input type="text" required>
+                </div>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Otros datos -->
+    <section class="contacto-info">
+        <h2>Direccion</h2>
+        <img src="Img/direccion.png" alt="">
+        <p>Washington, USA 6036 Richmond hwy., Alexandria, VA, 2230</p>
+        <hr>
+        <h2>Telefono</h2>
+        <img src="Img/telefono.png" alt="">
+        <p>(123) 456-78-90, (123) 456-78-91</p>
+        <hr>
+        <h2>Mail</h2>
+        <img src="Img/mail.png" alt="">
+        <p>info@demolink.org</p>
+        <hr>
+        <h2>Horario</h2>
+        <img src="Img/horario.png" alt="">
+        <p>Mon-Fri: 9 am – 6 pm<br>Saturday: 9 am – 4 pm<br>Sunday: Closed</p>
+        <hr>
+        <!-- Mapa Google -->
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d365605.4618984023!2d-64.62340034836818!3d-31.641418299417214!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432a28f032e839f%3A0x75ad8743d2604827!2sNails%20%26%20Co.%20-%20Nueva%20C%C3%B3rdoba!5e0!3m2!1sen!2sar!4v1664854294368!5m2!1sen!2sar"
+            width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+    </section>
+
+</main>
+<!-- FIN MAIN  -->
+
+    <!------------FOOTER------------>
+    <footer>
+        <div class="footer">
+            <!-- FOOTER PRINCIPAL -->
+
+            <div class="footer_container">
+                <div class="row">
+
+                    <div class="col">
+                        <h3>Navegacion</h3>
+                        <hr class="line_footer">
+                        <ul class="navegacion-list">
+                            <li><a href="#">Productos</a></li>
+                            <li><a href="contacto.html">Contactos</a></li>
+                            <li><a href="faq.html">Preguntas frecuentes</a></li>
+                            <li><a href="#">Nosotros</a></li>
+                            <li><a href="Login-registrate.html">Crear cuenta/Iniciar sesión</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col">
+                        <h3>Informacion del contacto</h3>
+                        <hr class="line_footer">
+                        <ul class="info-contacto-list">
+                            <li><i class="fa-solid fa-location-dot" aria-hidden="true"></i>Washington, USA 6036 Richmond
+                                hwy.,
+                                Alexandria, VA, 2230
+                            </li>
+                            <li><i class="fa-solid fa-phone" aria-hidden="true"></i>+1 (234) 567 8901</li>
+                            <li><i class="fa-regular fa-envelope" aria-hidden="true"></i>info@demolink.org</li>
+                        </ul>
+                    </div>
+
+                    <div class="col">
+                        <h3>Redes sociales</h3>
+                        <hr class="line_footer">
+                        <ul class="sm-icons">
+                            <li><a href="#"><i aria-label="facebook" role="img" class="fa-brands fa-facebook"></i></a>
+                            </li>
+                            <li><a href="#"><i aria-label="twitter" role="img" class="fa-brands fa-twitter"></i></a>
+                            </li>
+                            <li><a href="#"><i aria-label="linkedin" role="img" class="fa-brands fa-linkedin"></i></a>
+                            </li>
+                            <li><a href="#"><i aria-label="instagram" role="img" class="fa-brands fa-instagram"></i></a>
+                            </li>
+                        </ul>
+
+                        <h3>Suscribite a nuestro boletin</h3>
+                        <hr class="line_footer">
+                        <form action="">
+                            <label for="email">Email:</label>
+                            <input type="text" placeholder="email">
+                            <button class="email_enviar_btn">Enviar</button>
+                        </form>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- FOOTER COPYRIGHT  -->
+        <div class="footer_copy">
+            <img class="logo-leon" src="../img/Logo2.png" alt="leon mayorista logo">
+            <small>&copy; COPYRIGHT - 2022 <b>LEON</b> TODOS LOS DERECHOS RESERVADOS.</small>
+        </div>
+
+    </footer>
+
+
+    <!-- CDN para que funcionen los componentes de bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
