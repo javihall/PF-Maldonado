@@ -751,12 +751,52 @@ ul {
 }
 
 .input-group-login input, .input-group-registrate input {
-  width: 90%;
+  width: 60%;
   border-radius: 5px;
   border: 1px solid;
   padding: 12px 19px;
   margin-bottom: 20px;
   display: block;
+}
+
+.input-group-login label, .input-group-registrate label {
+  margin-bottom: 15px;
+}
+
+.contenedores-botones {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+}
+
+.contenedores-botones button {
+  width: 60%;
+  padding: 12px 19px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+
+.login-submit-btn {
+  background-color: #6558F5;
+  border: none;
+  font-weight: bold;
+}
+
+.login-google-submit-btn {
+  background-color: #1AAE9F;
+  border: none;
+  font-weight: bold;
+}
+
+.crear-cuenta-btn {
+  width: 60%;
+  padding: 12px 19px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+
+.google-icon {
+  margin-right: 8px;
 }
 
 /*# sourceMappingURL=style.css.map */

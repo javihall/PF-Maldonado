@@ -7,14 +7,11 @@
 .contenedor-contacto {
     display: flex;
     padding: 15px 0;
+    // flex-wrap: wrap;
 }
 
 .containter-formulario, .container-contacto-info {
     width: 50%;
-}
-
-.contact__form {
-    
 }
 
 .input-groupp input, textarea {

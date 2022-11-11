@@ -45,20 +45,20 @@
                                 <a class="nav-link" href="#">Tienda</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link current_page" aria-current="page" href="contacto.html">Contacto</a>
+                                <a class="nav-link"  href="contacto.html">Contacto</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" aria-current="page" href="faq.html">FAQ</a>
+                                <a class="nav-link"  href="faq.html">FAQ</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#">Nosotros</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" aria-current="page" href="login-registrate.html"><i
+                                <a class="nav-link current_page" aria-current="page" href="login-registrate.html"><i
                                         class="fa-solid fa-user"></i></a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link cart-icon" aria-current="page" href="#"><i
+                                <a class="nav-link cart-icon"  href="#"><i
                                         class="fa-solid fa-cart-shopping"></i></a>
                             </li>
 
@@ -103,14 +103,16 @@
                     <form class="contact__form">
                         <div class="input-group-login">
                             <label for="">Usuario</label>
-                            <input type="text">
+                            <input placeholder="Usuario" required type="text">
                         </div>
                         <div class="input-group-login">
                             <label for="">Contraseña</label>
-                            <input type="password">
+                            <input placeholder="Contraseña" required type="password">
                         </div>
-                        <button>Iniciar sesion</button>
-                        <button>Iniciar sesion con Google</button>
+                        <div class="contenedores-botones">
+                        <button class="login-submit-btn" type="submit">Iniciar sesion</button>
+                        <button class="login-google-submit-btn" ><i class="fa-brands fa-google google-icon"></i>Iniciar sesion con Google</button>
+                        </div>
                     </form>
                 </section>
 
@@ -122,25 +124,25 @@
                     <form class="contact__form">
                         <div class="input-group-registrate">
                             <label for="">Nombre*:</label>
-                            <input type="text" required>
+                            <input placeholder="Nombre" type="text" required>
                         </div>
                         <div class="input-group-registrate">
                             <label for="">Mail*:</label>
-                            <input type="text" required>
+                            <input placeholder="Mail" type="text" required>
                         </div>
                         <div class="input-group-registrate">
                             <label for="">Telefono:</label>
-                            <input type="text">
+                            <input placeholder="Telefono" type="text">
                         </div>
                         <div class="input-group-registrate">
                             <label for="">Contraseña*:</label>
-                            <input type="text" required>
+                            <input placeholder="Contraseña" type="text" required>
                         </div>
                         <div class="input-group-registrate">
                             <label for="">Confirmar contraseña*:</label>
-                            <input type="text" required>
+                            <input placeholder="Confirmar contraseña" type="text" required>
                         </div>
-                        <button>Crear cuenta</button>
+                        <button class="login-submit-btn crear-cuenta-btn" type="submit">Crear cuenta</button>
                     </form>
                 </section>
             </div>
