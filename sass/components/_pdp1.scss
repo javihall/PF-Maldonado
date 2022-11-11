@@ -100,3 +100,28 @@
 .cantidad-producto label {
     display: none;
 }
+
+@media all and (max-width: 768px){
+    .pdp-container {
+        flex-direction: column;
+        padding:0;
+        align-items: center;
+    }
+
+    .carousel-productos, .detalle-d-producto {
+        width: 70%;
+    }
+
+    .detalle-d-producto {
+        margin-top: 34px;
+    }
+}
+
+.h2-productos-relacionados {
+    margin-bottom: 10px;
+    margin-top: 25px;
+    color: #030303;
+    font-size: 30px;
+    line-height: 1.2;   
+    text-align: center;
+  }

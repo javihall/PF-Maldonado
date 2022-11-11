@@ -703,6 +703,19 @@ ul {
   width: 50%;
 }
 
+@media all and (max-width: 768px) {
+  .contenedor-contacto {
+    flex-direction: column;
+    padding: 0;
+    align-items: center;
+  }
+  .containter-formulario, .container-contacto-info {
+    width: 70%;
+  }
+  .container-contacto-info {
+    margin-top: 34px;
+  }
+}
 .input-groupp input, textarea {
   width: 90%;
   border-radius: 5px;
@@ -798,6 +811,19 @@ ul {
   margin-right: 8px;
 }
 
+@media all and (max-width: 768px) {
+  .contenedor-login-registrate {
+    flex-direction: column;
+    padding: 0;
+    align-items: center;
+  }
+  .containter-form-login, .containter-form-registrate {
+    width: 70%;
+  }
+  .containter-form-registrate {
+    margin-top: 34px;
+  }
+}
 /* hacer listas de variables*/
 .pdp-container {
   display: flex;
@@ -892,6 +918,28 @@ ul {
 
 .cantidad-producto label {
   display: none;
+}
+
+@media all and (max-width: 768px) {
+  .pdp-container {
+    flex-direction: column;
+    padding: 0;
+    align-items: center;
+  }
+  .carousel-productos, .detalle-d-producto {
+    width: 70%;
+  }
+  .detalle-d-producto {
+    margin-top: 34px;
+  }
+}
+.h2-productos-relacionados {
+  margin-bottom: 10px;
+  margin-top: 25px;
+  color: #030303;
+  font-size: 30px;
+  line-height: 1.2;
+  text-align: center;
 }
 
 /*# sourceMappingURL=style.css.map */

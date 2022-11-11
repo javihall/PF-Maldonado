@@ -65,3 +65,20 @@
 .google-icon {
     margin-right: 8px;
 }
+
+
+@media all and (max-width: 768px){
+    .contenedor-login-registrate {
+        flex-direction: column;
+        padding:0;
+        align-items: center;
+    }
+
+    .containter-form-login, .containter-form-registrate {
+        width: 70%;
+    }
+
+    .containter-form-registrate {
+        margin-top: 34px;
+    }
+}
