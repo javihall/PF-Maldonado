@@ -1,0 +1,102 @@
+@import "../base/listas";
+
+.pdp-container {
+    display: flex;
+    margin-top: 56px;
+}
+
+
+
+.img-producto-principal {
+    width: 60%;
+    height: auto;
+
+}
+
+.img-producto-principal img {
+    width: 100%;
+    
+}
+.imagen-prod-btn button {
+    width: 22%;
+    height: auto;
+    padding: 2px;
+    margin: 2px;
+    border: 1px solid nth($colores , 10);
+    background-color: white;
+    
+}
+
+.carousel-productos button img {
+    width: 100%;
+}
+
+.carousel-productos {
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+} 
+
+.detalle-d-producto {
+    width: 45%;
+    padding: 0 15px;
+}
+
+.imagen-prod-btn {
+    display: flex;
+    justify-content: center;
+}
+
+.heading-product {
+    font-size: 30px;
+    line-height: 1.2;
+}
+
+.precio-producto {
+    font-weight: bold;
+    color: nth($colores , 3);
+    font-size: 20px;
+}
+
+.agregar-cart-btn {
+    margin-top: 10px;
+    min-width: 120px;
+    color: nth($colores, 4);
+    padding: 5px 10px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    border-radius: 20px;
+    border: 2px solid nth($colores, 1);
+    background: nth($colores, 1);
+    text-align: center;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.agregar-cart-btn:hover {
+    background: nth($colores, 11);
+    color: nth($colores, 3);
+}
+
+.cantidad-producto {
+    width: 150px;
+    
+}
+
+.cantidad {
+    width: 40px;
+    height: 25px;
+    text-align: center;
+}
+
+.cantidad-producto button {
+    width:25px;
+    height:25px;
+    border: 1px solid nth($colores, 10 );
+}
+
+.cantidad-producto label {
+    display: none;
+}

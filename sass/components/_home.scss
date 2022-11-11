@@ -54,7 +54,6 @@
     color: nth($colores, 4);
     padding: 5px 10px;
     font-weight: bold;
-    cursor: pointer;
     transition: all 0.3s ease;
     border-radius: 20px;
     border: 2px solid nth($colores, 1);
@@ -66,7 +65,7 @@
 
 .readMore_btn:hover {
     background: nth($colores, 11);
-    color: nth($colores, 2);
+    color: nth($colores, 3);
 }
 
 /*********** END Main banner **********/

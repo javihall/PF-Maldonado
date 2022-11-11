@@ -298,7 +298,6 @@ ul {
   color: #030303;
   padding: 5px 10px;
   font-weight: bold;
-  cursor: pointer;
   transition: all 0.3s ease;
   border-radius: 20px;
   border: 2px solid #ffd8cb;
@@ -310,7 +309,7 @@ ul {
 
 .readMore_btn:hover {
   background: #F9F9F9;
-  color: #f7c2b0;
+  color: #f3906f;
 }
 
 /*********** END Main banner **********/
@@ -797,6 +796,102 @@ ul {
 
 .google-icon {
   margin-right: 8px;
+}
+
+/* hacer listas de variables*/
+.pdp-container {
+  display: flex;
+  margin-top: 56px;
+}
+
+.img-producto-principal {
+  width: 60%;
+  height: auto;
+}
+
+.img-producto-principal img {
+  width: 100%;
+}
+
+.imagen-prod-btn button {
+  width: 22%;
+  height: auto;
+  padding: 2px;
+  margin: 2px;
+  border: 1px solid #acacac;
+  background-color: white;
+}
+
+.carousel-productos button img {
+  width: 100%;
+}
+
+.carousel-productos {
+  width: 55%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.detalle-d-producto {
+  width: 45%;
+  padding: 0 15px;
+}
+
+.imagen-prod-btn {
+  display: flex;
+  justify-content: center;
+}
+
+.heading-product {
+  font-size: 30px;
+  line-height: 1.2;
+}
+
+.precio-producto {
+  font-weight: bold;
+  color: #f3906f;
+  font-size: 20px;
+}
+
+.agregar-cart-btn {
+  margin-top: 10px;
+  min-width: 120px;
+  color: #030303;
+  padding: 5px 10px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  border-radius: 20px;
+  border: 2px solid #ffd8cb;
+  background: #ffd8cb;
+  text-align: center;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.agregar-cart-btn:hover {
+  background: #F9F9F9;
+  color: #f3906f;
+}
+
+.cantidad-producto {
+  width: 150px;
+}
+
+.cantidad {
+  width: 40px;
+  height: 25px;
+  text-align: center;
+}
+
+.cantidad-producto button {
+  width: 25px;
+  height: 25px;
+  border: 1px solid #acacac;
+}
+
+.cantidad-producto label {
+  display: none;
 }
 
 /*# sourceMappingURL=style.css.map */
