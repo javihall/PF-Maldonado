@@ -272,7 +272,7 @@ ul {
   align-items: flex-start;
   flex-direction: column;
   justify-content: center;
-  background: url(../../img/carousel1.png);
+  background: url(../img/carousel1.png);
   background-size: cover;
   background-position-x: center;
   background-position-y: 40%;
@@ -393,7 +393,7 @@ ul {
 .category1 {
   background-color: #f7c2b0;
   border-radius: 5px;
-  background-image: url(../../img/maquillaje.jpg);
+  background-image: url(../img/maquillaje.jpg);
   background-size: cover;
   background-position: center;
   height: 300px;
@@ -422,7 +422,7 @@ ul {
 
 .category2 {
   border-radius: 5px;
-  background-image: url(../../img/esmaltes.png);
+  background-image: url(../img/esmaltes.png);
   background-size: cover;
   background-position: center;
   display: flex;
@@ -433,7 +433,7 @@ ul {
 
 .category3 {
   border-radius: 5px;
-  background-image: url(../../img/nails.jpg);
+  background-image: url(../img/nails.jpg);
   background-size: cover;
   background-position: center;
   display: flex;
@@ -444,7 +444,7 @@ ul {
 
 .category4 {
   border-radius: 5px;
-  background-image: url(../../img/pestania2.jpg);
+  background-image: url(../img/pestania2.jpg);
   background-size: cover;
   background-position: center;
   display: flex;
