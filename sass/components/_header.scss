@@ -5,7 +5,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Montserrat', sans-serif;;
+    font-family: 'Montserrat', sans-serif;
+    ;
     line-height: normal;
 }
 
@@ -14,95 +15,193 @@
     display: flex;
     justify-content: center;
     width: 100%;
-    background-color: nth($colores , 1 );
+    background-color: nth($colores , 1);
+
+    nav {
+        background-color: nth($colores , 1);
+        width: 70%;
+
+        div {
+            div {
+                justify-content: flex-end;
+                flex-grow: 0;
+
+                ul {
+                    li {
+                        a {
+                            text-decoration: none;
+                            color: nth($colores , 4);
+                            font-size: 16px;
+                            line-height: 20px;
+                            letter-spacing: 0.4px;
+                            font-weight: 600;
+                            padding: 0 2px;
+
+                            &:hover {
+                                border-radius: 5px;
+                                background-color: nth($colores , 4);
+                                color: nth($colores , 11);
+                            }
+                        }
+                    }
+                }
+            }
+
+            a {
+                div {
+                    img {
+                        height: 140px;
+                        width: auto;
+                        border-radius: 30px;
+
+                    }
+                }
+            }
+        }
+    }
 
 }
 
-.logoimagen { 
-    height: 140px;
-    width: auto;
-    border-radius: 30px;
 
-}
-
-.bg_color {
-    background-color: nth($colores , 1 );
-}
-
-.width-header {
-    width: 70%;
-}
-
-.header-end {
-    justify-content: flex-end;
-    flex-grow: 0;
-}
-
-.nav_estilo li a {
-    text-decoration: none;
-    color: nth($colores , 4 );
-    font-size: 16px;
-    line-height: 20px;
-    letter-spacing: 0.4px;
-    font-weight: 600;
-    padding: 0 2px;
-}
-
-.hover-nav-links li a:hover {
-    border-radius: 5px;
-    background-color: nth($colores , 4 );
-    color: nth($colores , 11);
-}
 
 .current_page {
-    border-bottom: 2px solid nth($colores , 4 );
+    border-bottom: 2px solid nth($colores , 4);
 }
 
 .cart-icon {
     margin-right: 25px;
 }
 
-.boton-search {
-    background-color: transparent;
-    border: 1px nth($colores , 4)solid;
-    padding: 2px 4px;
-    width: 32px;
-    cursor: pointer;
-    margin: 4px;
-    border-radius: 5px;
-    color: nth($colores , 4);
+.d-flex {
+    input {
+        margin: 4px;
+        padding: 2px;
+        border: none;
+        border-bottom: 1px black solid;
+        width: 70%;
+        background: transparent;
+        border-radius: 0;
+
+        &:focus {
+            margin: 4px;
+            padding: 2px;
+            border: none;
+            border-bottom: 1px black solid;
+            width: 70%;
+            background: transparent;
+            border-radius: 0;
+            box-shadow: none;
+        }
+    }
+
+    button {
+        background-color: transparent;
+        border: 1px nth($colores , 4)solid;
+        padding: 2px 4px;
+        width: 32px;
+        cursor: pointer;
+        margin: 4px;
+        border-radius: 5px;
+        color: nth($colores , 4);
+
+        &:hover {
+            background-color: nth($colores , 4);
+            color: nth($colores , 11);
+            border: nth($colores , 11);
+        }
+
+        &:focus {
+            background-color: nth($colores , 4);
+            color: nth($colores , 11);
+            border: nth($colores , 11);
+            box-shadow: none;
+        }
+
+        &:active {
+            background-color: nth($colores , 4) !important;
+            color: nth($colores , 11);
+            border: nth($colores , 11);
+        }
+    }
 }
 
-.boton-search:hover {
-    background-color: nth($colores , 4);
-    color: nth($colores , 11);
-    border: nth($colores , 11);
- }
 
- .boton-search:active {
-    background-color: nth($colores , 4) !important;
-    color: nth($colores , 11);
-    border: nth($colores , 11);
- }
+// .boton-search {
+//     background-color: transparent;
+//     border: 1px nth($colores , 4)solid;
+//     padding: 2px 4px;
+//     width: 32px;
+//     cursor: pointer;
+//     margin: 4px;
+//     border-radius: 5px;
+//     color: nth($colores , 4);
+// }
 
- .buscar-input {
-    margin: 4px;
-    padding: 2px;
-    border: none;
-    border-bottom: 1px black solid;
-    width: 70%;
-    background: transparent;
-    border-radius: 0;
-}
+// .boton-search:hover {
+//     background-color: nth($colores , 4);
+//     color: nth($colores , 11);
+//     border: nth($colores , 11);
+// }
 
-.buscar-input:focus {
-    margin: 4px;
-    padding: 2px;
-    border: none;
-    border-bottom: 1px black solid;
-    width: 70%;
-    background: transparent;
-    border-radius: 0;
-    box-shadow: none;
+// .boton-search:active {
+//     background-color: nth($colores , 4) !important;
+//     color: nth($colores , 11);
+//     border: nth($colores , 11);
+// }
 
-}
+// .buscar-input {
+//     margin: 4px;
+//     padding: 2px;
+//     border: none;
+//     border-bottom: 1px black solid;
+//     width: 70%;
+//     background: transparent;
+//     border-radius: 0;
+// }
+
+// .buscar-input:focus {
+//     margin: 4px;
+//     padding: 2px;
+//     border: none;
+//     border-bottom: 1px black solid;
+//     width: 70%;
+//     background: transparent;
+//     border-radius: 0;
+//     box-shadow: none;
+
+// }
+
+// .logoimagen {
+//     height: 140px;
+//     width: auto;
+//     border-radius: 30px;
+// }
+
+// .bg_color {
+//     background-color: nth($colores , 1);
+// }
+
+// .width-header {
+//     width: 70%;
+// }
+
+// .header-end {
+//     justify-content: flex-end;
+//     flex-grow: 0;
+// }
+
+// .nav_estilo li a {
+//     text-decoration: none;
+//     color: nth($colores , 4);
+//     font-size: 16px;
+//     line-height: 20px;
+//     letter-spacing: 0.4px;
+//     font-weight: 600;
+//     padding: 0 2px;
+// }
+
+// .hover-nav-links li a:hover {
+//     border-radius: 5px;
+//     background-color: nth($colores , 4);
+//     color: nth($colores , 11);
+// }

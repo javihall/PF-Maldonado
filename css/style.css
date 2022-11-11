@@ -13,27 +13,15 @@
   width: 100%;
   background-color: #ffd8cb;
 }
-
-.logoimagen {
-  height: 140px;
-  width: auto;
-  border-radius: 30px;
-}
-
-.bg_color {
+.header-contenedor nav {
   background-color: #ffd8cb;
-}
-
-.width-header {
   width: 70%;
 }
-
-.header-end {
+.header-contenedor nav div div {
   justify-content: flex-end;
   flex-grow: 0;
 }
-
-.nav_estilo li a {
+.header-contenedor nav div div ul li a {
   text-decoration: none;
   color: #030303;
   font-size: 16px;
@@ -42,11 +30,15 @@
   font-weight: 600;
   padding: 0 2px;
 }
-
-.hover-nav-links li a:hover {
+.header-contenedor nav div div ul li a:hover {
   border-radius: 5px;
   background-color: #030303;
   color: #F9F9F9;
+}
+.header-contenedor nav div a div img {
+  height: 140px;
+  width: auto;
+  border-radius: 30px;
 }
 
 .current_page {
@@ -57,30 +49,7 @@
   margin-right: 25px;
 }
 
-.boton-search {
-  background-color: transparent;
-  border: 1px #030303 solid;
-  padding: 2px 4px;
-  width: 32px;
-  cursor: pointer;
-  margin: 4px;
-  border-radius: 5px;
-  color: #030303;
-}
-
-.boton-search:hover {
-  background-color: #030303;
-  color: #F9F9F9;
-  border: #F9F9F9;
-}
-
-.boton-search:active {
-  background-color: #030303 !important;
-  color: #F9F9F9;
-  border: #F9F9F9;
-}
-
-.buscar-input {
+.d-flex input {
   margin: 4px;
   padding: 2px;
   border: none;
@@ -89,8 +58,7 @@
   background: transparent;
   border-radius: 0;
 }
-
-.buscar-input:focus {
+.d-flex input:focus {
   margin: 4px;
   padding: 2px;
   border: none;
@@ -100,8 +68,39 @@
   border-radius: 0;
   box-shadow: none;
 }
+.d-flex button {
+  background-color: transparent;
+  border: 1px #030303 solid;
+  padding: 2px 4px;
+  width: 32px;
+  cursor: pointer;
+  margin: 4px;
+  border-radius: 5px;
+  color: #030303;
+}
+.d-flex button:hover {
+  background-color: #030303;
+  color: #F9F9F9;
+  border: #F9F9F9;
+}
+.d-flex button:focus {
+  background-color: #030303;
+  color: #F9F9F9;
+  border: #F9F9F9;
+  box-shadow: none;
+}
+.d-flex button:active {
+  background-color: #030303 !important;
+  color: #F9F9F9;
+  border: #F9F9F9;
+}
 
 /* hacer listas de variables*/
+/* correccion para bootstrap */
+ul {
+  padding-left: 0;
+}
+
 .footer {
   width: 100%;
   background-color: #F9F9F9;
@@ -110,83 +109,45 @@
   align-items: center;
   padding-bottom: 10px;
 }
-
-footer {
-  box-shadow: 1px 10px 28px -4px rgba(255, 216, 203, 0.73);
-  -webkit-box-shadow: 1px 10px 28px -4px rgba(255, 216, 203, 0.73);
-  -moz-box-shadow: 1px 10px 28px -4px rgba(255, 216, 203, 0.73);
-}
-
-.footer_container {
+.footer .footer_container {
   width: 70%;
   min-height: 200px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
-.row {
+.footer .footer_container .row {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: flex-start;
   width: 100%;
 }
-
-.col {
+.footer .footer_container .row .col {
   min-width: 250px;
   color: #212121;
   max-width: 380px;
 }
-
-.col h3 {
-  color: #050505;
-  font-size: 21px;
-  padding-top: 10px;
-}
-
-.sm-icons li {
-  display: inline-block;
-  margin: 5px;
-}
-
-.sm-icons li a i {
-  color: #f7c2b0;
-  font-size: 24px;
-}
-
-.sm-icons li a i:hover {
+.footer .footer_container .row .col form button {
+  margin-top: 10px;
   color: #030303;
-}
-
-/* correccion para bootstrap */
-ul {
-  padding-left: 0;
-}
-
-.navegacion-list li,
-.info-contacto-list li {
-  list-style: none;
-}
-
-.navegacion-list li a {
+  padding: 1px 12px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border-radius: 20px;
+  border: 1px solid #030303;
+  background: #ffd8cb;
+  text-align: center;
   text-decoration: none;
-  color: #030303;
-  transition: all 0.5s;
+  font-size: 14px;
 }
-
-.navegacion-list li a:hover {
-  text-decoration: underline;
-  background-color: #F5F5F5;
+.footer .footer_container .row .col form button:hover {
+  background: #030303;
+  color: #F9F9F9;
+  border: 1px solid #f7c2b0;
 }
-
-.info-contacto-list li i {
-  color: #f7c2b0;
-  font-size: 18px;
-  padding: 10px;
-}
-
-.line_footer {
+.footer .footer_container .row .col hr {
   max-width: 100%;
   width: 90px;
   margin: 10px 0;
@@ -198,26 +159,44 @@ ul {
   border-bottom-width: 0px;
   opacity: 1;
 }
-
-.email_enviar_btn {
-  margin-top: 10px;
-  color: #030303;
-  padding: 1px 12px;
-  font-weight: bold;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  border-radius: 20px;
-  border: 1px solid black;
-  background: #ffd8cb;
-  text-align: center;
-  text-decoration: none;
-  font-size: 14px;
+.footer .footer_container .row .col h3 {
+  color: #050505;
+  font-size: 21px;
+  padding-top: 10px;
 }
 
-.email_enviar_btn:hover {
-  background: #030303;
-  color: #F9F9F9;
-  border: 1px solid #f7c2b0;
+.sm-icons li {
+  display: inline-block;
+  margin: 5px;
+}
+.sm-icons li a i {
+  color: #f7c2b0;
+  font-size: 24px;
+}
+.sm-icons li a i:hover {
+  color: #030303;
+}
+
+.navegacion-list {
+  list-style: none;
+}
+.navegacion-list li a {
+  text-decoration: none;
+  color: #030303;
+  transition: all 0.5s;
+}
+.navegacion-list li a:hover {
+  text-decoration: underline;
+  background-color: #F5F5F5;
+}
+
+.info-contacto-list li {
+  list-style: none;
+}
+.info-contacto-list li i {
+  color: #f7c2b0;
+  font-size: 18px;
+  padding: 10px;
 }
 
 /***********FOOTER copy***********/
@@ -230,20 +209,21 @@ ul {
   flex-wrap: wrap;
   background-color: #EAEAEA;
 }
-
-.logo-leon {
+.footer_copy img {
   width: 70px;
 }
-
-/* elimina imagen logo del footer para mobile */
 @media all and (max-width: 768px) {
-  .logo-leon {
+  .footer_copy img {
     display: none;
   }
+}
+@media all and (max-width: 768px) {
   .footer_copy small {
     text-align: center;
   }
 }
+
+/* elimina imagen logo del footer para mobile */
 /*********** END FOOTER copy***********/
 /* hacer listas de variables*/
 .main {
