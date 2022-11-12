@@ -652,29 +652,23 @@ ul {
   margin-top: 25px;
 }
 
+/* Formulario contactanos*/
 .contenedor-contacto {
   display: flex;
   padding: 15px 0;
 }
-
-.containter-formulario, .container-contacto-info {
+.contenedor-contacto .containter-formulario {
   width: 50%;
 }
-
 @media all and (max-width: 768px) {
-  .contenedor-contacto {
-    flex-direction: column;
-    padding: 0;
-    align-items: center;
-  }
-  .containter-formulario, .container-contacto-info {
+  .contenedor-contacto .containter-formulario {
     width: 70%;
   }
-  .container-contacto-info {
-    margin-top: 34px;
-  }
 }
-.input-groupp input, textarea {
+.contenedor-contacto .containter-formulario div form div label {
+  margin-bottom: 15px;
+}
+.contenedor-contacto .containter-formulario div form div input {
   width: 90%;
   border-radius: 5px;
   border: 1px solid;
@@ -682,28 +676,73 @@ ul {
   margin-bottom: 20px;
   display: block;
 }
-
-.input-groupp label {
-  margin-bottom: 15px;
-}
-
-.input-groupp textarea {
+.contenedor-contacto .containter-formulario div form div textarea {
+  width: 90%;
+  border-radius: 5px;
+  border: 1px solid;
+  padding: 12px 19px;
+  margin-bottom: 20px;
+  display: block;
   resize: none;
 }
-
-.submit-boton {
+.contenedor-contacto .containter-formulario div form button {
   width: 40%;
   height: 35px;
+  margin-top: 10px;
+  color: #030303;
+  padding: 1px 12px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border-radius: 20px;
+  border: 1px solid #030303;
+  background: #ffd8cb;
+  text-align: center;
+  text-decoration: none;
+  font-size: 14px;
+}
+.contenedor-contacto .containter-formulario div form button:hover {
+  background: #030303;
+  color: #F9F9F9;
+  border: 1px solid #f7c2b0;
+}
+@media all and (max-width: 768px) {
+  .contenedor-contacto {
+    flex-direction: column;
+    padding: 0;
+    align-items: center;
+  }
 }
 
-.cajas-info {
+/* columna otra info */
+.container-contacto-info {
+  width: 50%;
+}
+.container-contacto-info hr {
+  max-width: 100%;
+  width: 90px;
+  margin: 10px 0;
+  border-top-width: 3px;
+  border-top-style: solid;
+  border-top-color: #ffd8cb;
+  border-left-width: 0px;
+  border-right-width: 0px;
+  border-bottom-width: 0px;
+  opacity: 1;
+}
+.container-contacto-info div {
   display: flex;
 }
-
-.cajas-info i {
+.container-contacto-info div i {
   padding-right: 16px;
   font-size: 20px;
   color: #f7c2b0;
+}
+@media all and (max-width: 768px) {
+  .container-contacto-info {
+    width: 70%;
+    margin-top: 34px;
+  }
 }
 
 /* hacer listas de variables*/

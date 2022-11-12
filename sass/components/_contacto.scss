@@ -1,64 +1,169 @@
 @import "../base/listas";
 
+
+
 .breadcrumb-contenedor {
     margin-top: 25px;
 }
 
+
+/* Formulario contactanos*/
 .contenedor-contacto {
     display: flex;
     padding: 15px 0;
-    // flex-wrap: wrap;
-}
 
-.containter-formulario, .container-contacto-info {
-    width: 50%;
-} 
+    .containter-formulario {
+        width: 50%;
 
-@media all and (max-width: 768px){
-    .contenedor-contacto {
+        @media all and (max-width: 768px) {
+            width: 70%;
+        }
+
+        div {
+            form {
+                div {
+                    label {
+                        margin-bottom: 15px;
+                    }
+
+                    input {
+                        width: 90%;
+                        border-radius: 5px;
+                        border: 1px solid;
+                        padding: 12px 19px;
+                        margin-bottom: 20px;
+                        display: block;
+                    }
+
+                    textarea {
+                        width: 90%;
+                        border-radius: 5px;
+                        border: 1px solid;
+                        padding: 12px 19px;
+                        margin-bottom: 20px;
+                        display: block;
+                        resize: none;
+                    }
+                }
+
+                button {
+                    width: 40%;
+                    height: 35px;
+                    margin-top: 10px;
+                    color: #030303;
+                    padding: 1px 12px;
+                    font-weight: bold;
+                    cursor: pointer;
+                    transition: all 0.3s ease;
+                    border-radius: 20px;
+                    border: 1px solid #030303;
+                    background: #ffd8cb;
+                    text-align: center;
+                    text-decoration: none;
+                    font-size: 14px;
+
+                    &:hover {
+                        background: #030303;
+                        color: #F9F9F9;
+                        border: 1px solid #f7c2b0;
+                    }
+                }
+            }
+        }
+    }
+
+    @media all and (max-width: 768px) {
         flex-direction: column;
-        padding:0;
+        padding: 0;
         align-items: center;
     }
+}
 
-    .containter-formulario, .container-contacto-info {
-        width: 70%;
+
+/* columna otra info */
+
+
+.container-contacto-info {
+    width: 50%;
+
+    hr {
+        max-width: 100%;
+        width: 90px;
+        margin: 10px 0;
+        border-top-width: 3px;
+        border-top-style: solid;
+        border-top-color: nth($colores , 1);
+        border-left-width: 0px;
+        border-right-width: 0px;
+        border-bottom-width: 0px;
+        opacity: 1;
+
     }
 
-    .container-contacto-info {
+    div {
+        display: flex;
+
+        i {
+            padding-right: 16px;
+            font-size: 20px;
+            color: nth($colores , 2);
+        }
+    }
+
+
+    @media all and (max-width: 768px) {
+        width: 70%;
         margin-top: 34px;
     }
 }
 
+// @media all and (max-width: 768px) {
+//      .contenedor-contacto {
+//          flex-direction: column;
+//          padding:0;
+//          align-items: center;
+//      }
+
+//     .containter-formulario,
+//     .container-contacto-info {
+//         width: 70%;
+//     }
+
+//     .container-contacto-info {
+//         margin-top: 34px;
+//     }
+// }
+
+// .cajas-info {
+//     display: flex;
+// }
+
+// .cajas-info i {
+//     padding-right: 16px;
+//     font-size: 20px;
+//     color: nth($colores , 2);
+// }
 
 
-.input-groupp input, textarea {
-    width: 90%;
-    border-radius: 5px;
-    border: 1px solid;
-    padding: 12px 19px;
-    margin-bottom: 20px;
-    display: block;
-}
+// .input-groupp input,
+// textarea {
+//     width: 90%;
+//     border-radius: 5px;
+//     border: 1px solid;
+//     padding: 12px 19px;
+//     margin-bottom: 20px;
+//     display: block;
+// }
 
-.input-groupp label {
-    margin-bottom: 15px;
-}
-.input-groupp textarea {
-    resize: none;
-}
+// .input-groupp label {
+//     margin-bottom: 15px;
+// }
 
-.submit-boton {
-    width: 40%;
-    height: 35px;
-}
+// .input-groupp textarea {
+//     resize: none;
+// }
 
-.cajas-info {
-display: flex;
-}
-
-.cajas-info i {
-    padding-right: 16px;
-    font-size: 20px;
-    color: nth($colores , 2);
-}
+// .submit-boton {
+//     width: 40%;
+//     height: 35px;
+// }
