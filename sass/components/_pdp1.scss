@@ -269,20 +269,23 @@
     font-size: 30px;
     line-height: 1.2;
     text-align: center;
-}
 
-hr {
-    max-width: 100%;
-    width: 90px;
-    margin: 10px 0;
-    border-top-width: 3px;
-    border-top-style: solid;
-    border-top-color: nth($colores , 1);
-    border-left-width: 0px;
-    border-right-width: 0px;
-    border-bottom-width: 0px;
-    opacity: 1;
 }
+    // .line_categorias {
+    //     max-width: 100%;
+    //     width: 90px;
+    //     margin: 10px 0;
+    //     border-top-width: 3px;
+    //     border-top-style: solid;
+    //     border-top-color: nth($colores , 1);
+    //     border-left-width: 0px;
+    //     border-right-width: 0px;
+    //     border-bottom-width: 0px;
+    //     opacity: 1;
+    // }
+
+
+
 
 .section_producto_container {
     display: flex;

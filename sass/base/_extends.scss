@@ -1,0 +1,32 @@
+%linea-rosa {
+
+    max-width: 100%;
+    width: 90px;
+    margin: 10px 0;
+    border-top-width: 3px;
+    border-top-style: solid;
+    border-top-color: nth($colores , 1);
+    border-left-width: 0px;
+    border-right-width: 0px;
+    border-bottom-width: 0px;
+    opacity: 1;
+}
+
+%heading2-style {
+    margin: 10px 0;
+    color: nth($colores, 4);
+    font-size: 48px;
+    line-height: 1.4;
+    text-align: center;
+}
+
+%grid-config-categorias {
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    background-size: cover;
+    background-position: center;
+
+}

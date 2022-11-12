@@ -1,4 +1,6 @@
 @import "../base/listas";
+@import "../base/extends";
+
 
 .main {
     display: flex;
@@ -30,6 +32,11 @@
 
                 @media all and (max-width: 1024px) {
                     background-position-x: 65%;
+                }
+
+
+                hr {
+                    @extend %linea-rosa;
                 }
 
                 p {
@@ -64,102 +71,21 @@
     }
 }
 
-// .main-containter {
-//     width: 70%;
-//     background-color: nth($colores, 16);
-// }
 
-/* Hago la seccion main mas grande para poder visualizar los elementos mejor */
-// @media all and (max-width: 1024px) {
-//     .main-containter {
-//         width: 90%;
-//     }
-// }
-
-/*********** Main banner **********/
-// .containter-main-banner {
-//     width: 100%;
-//     height: 450px;
-//     display: flex;
-//     align-items: flex-start;
-//     flex-direction: column;
-//     justify-content: center;
-//     background: url(../img/carousel1.png);
-//     background-size: cover;
-//     background-position-x: center;
-//     background-position-y: 40%;
-//     padding-left: 20px;
-// }
-
-/* centrado de imagen banner principal */
-// @media all and (max-width: 1024px) {
-//     .containter-main-banner {
-//         background-position-x: 65%;
-//     }
-// }
-
-// .p-banner {
-//     font-family: 'Lato', sans-serif;
-//     color: nth($colores, 9);
-//     font-size: 16px;
-//     max-width: 400px;
-// }
-
-// .readMore_btn {
-//     margin-top: 10px;
-//     min-width: 120px;
-//     color: nth($colores, 4);
-//     padding: 5px 10px;
-//     font-weight: bold;
-//     transition: all 0.3s ease;
-//     border-radius: 20px;
-//     border: 2px solid nth($colores, 1);
-//     background: nth($colores, 1);
-//     text-align: center;
-//     text-decoration: none;
-//     font-size: 14px;
-// }
-
-// .readMore_btn:hover {
-//     background: nth($colores, 11);
-//     color: nth($colores, 3);
-// }
 
 /*********** END Main banner **********/
 
-/*********** Categorys style**********/
-
-/* cambia elementos de la seccion category para vista mobile */
-
-
-
-
-
-
-
+/*********** Grid Categorys style**********/
 
 
 
 .seccion-grid-categorias {
     h2 {
-        margin: 10px 0;
-        color: nth($colores, 4);
-        font-size: 48px;
-        line-height: 1.4;
-        text-align: center;
+        @extend %heading2-style;
     }
 
     hr {
-        max-width: 100%;
-        width: 90px;
-        margin: 10px 0;
-        border-top-width: 3px;
-        border-top-style: solid;
-        border-top-color: nth($colores , 1);
-        border-left-width: 0px;
-        border-right-width: 0px;
-        border-bottom-width: 0px;
-        opacity: 1;
+        @extend %linea-rosa;
     }
 
 
@@ -211,75 +137,35 @@
 
         .category1 {
             grid-area: 1 / 1 / 4 / 3;
-            background-color: nth($colores, 2);
-            border-radius: 5px;
             background-image: url(../../img/maquillaje.jpg);
-            background-size: cover;
-            background-position: center;
             height: 300px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            text-decoration: none;
+            @extend %grid-config-categorias;
         }
 
         .category2 {
             grid-area: 4 / 1 / 6 / 4;
-            border-radius: 5px;
             background-image: url(../img/esmaltes.png);
-            background-size: cover;
-            background-position: center;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            text-decoration: none;
+            @extend %grid-config-categorias;
         }
 
         .category3 {
             grid-area: 1 / 3 / 4 / 5;
-            border-radius: 5px;
             background-image: url(../img/nails.jpg);
-            background-size: cover;
-            background-position: center;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            text-decoration: none;
+            @extend %grid-config-categorias;
         }
 
         .category4 {
             grid-area: 4 / 4 / 6 / 5;
-            border-radius: 5px;
             background-image: url(../img/pestania2.jpg);
-            background-size: cover;
-            background-position: center;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            text-decoration: none;
+            @extend %grid-config-categorias;
         }
     }
 }
 
 
 
-// .h2_categorias {
-//     margin: 10px 0;
-//     color: nth($colores, 4);
-//     font-size: 48px;
-//     line-height: 1.4;
-//     text-align: center;
-// }
 
-// @media all and (max-width: 768px) {
-//      .grid_category {
-//          display: none !important;
-//      }
-
-//     .grid_category_mobile {
-//         display: flex !important;
-//     }
-// }
+/* Grid Categorys style MOBILE */
 
 
 .grid_category_mobile {
@@ -329,204 +215,21 @@
 
 }
 
-// .grid_category_mobile {
-//     flex-wrap: wrap;
-//     justify-content: center;
-//     display: none;
-// }
-
-// .img_category_container {
-//     width: 250px;
-//     height: 250px;
-//     border-radius: 100%;
-//     overflow: hidden;
-//     position: relative;
-// }
-
-// .img_category_container img {
-//     height: 100%;
-//     width: auto;
-//     object-fit: cover;
-//     position: absolute;
-// }
-
-// .mobile_category {
-//     width: 250px;
-//     height: auto;
-//     display: flex;
-//     flex-direction: column;
-//     margin: 10px 10px;
-// }
-
-// .grid_category_mobile a {
-//     text-decoration: none;
-//     color: nth($colores, 4);
-// }
-
-// .mobile_category span {
-//     font-weight: bold;
-//     margin: 10px 0;
-//     font-size: 18px;
-//     line-height: 1.4;
-//     text-align: center;
-// }
-
-// .grid_category {
-//     display: grid;
-//     grid-template-columns: repeat(4, minmax(100px, 1fr));
-//     grid-template-rows: repeat(5, 1fr);
-//     grid-column-gap: 10px;
-//     grid-row-gap: 10px;
-
-// }
-
-
-// .category1 {
-//     grid-area: 1 / 1 / 4 / 3;
-// }
-
-// .category2 {
-//     grid-area: 4 / 1 / 6 / 4;
-// }
-
-// .category3 {
-//     grid-area: 1 / 3 / 4 / 5;
-// }
-
-// .category4 {
-//     grid-area: 4 / 4 / 6 / 5;
-// }
-
-// .category1 {
-//     background-color: nth($colores, 2);
-//     border-radius: 5px;
-//     background-image: url(../img/maquillaje.jpg);
-//     background-size: cover;
-//     background-position: center;
-//     height: 300px;
-//     display: flex;
-//     justify-content: center;
-//     align-items: center;
-//     text-decoration: none;
-// }
-
-// .grid_category a div {
-//     font-size: 2rem;
-//     font-weight: bold;
-//     color: nth($colores, 16);
-//     border: 3px solid nth($colores, 16);
-//     padding: 2%;
-//     box-shadow: 0 0 25px nth($colores, 18);
-//     backdrop-filter: invert(80%) blur(1px);
-
-// }
-
-// .grid_category a div:hover {
-//     backdrop-filter: invert(0%) blur(5px);
-//     transition: 1s;
-//     color: nth($colores, 4);
-//     padding: 3%;
-// }
-
-
-// .category2 {
-//     border-radius: 5px;
-//     background-image: url(../img/esmaltes.png);
-//     background-size: cover;
-//     background-position: center;
-//     display: flex;
-//     justify-content: center;
-//     align-items: center;
-//     text-decoration: none;
-// }
-
-// .category3 {
-//     border-radius: 5px;
-//     background-image: url(../img/nails.jpg);
-//     background-size: cover;
-//     background-position: center;
-//     display: flex;
-//     justify-content: center;
-//     align-items: center;
-//     text-decoration: none;
-// }
-
-// .category4 {
-//     border-radius: 5px;
-//     background-image: url(../img/pestania2.jpg);
-//     background-size: cover;
-//     background-position: center;
-//     display: flex;
-//     justify-content: center;
-//     align-items: center;
-//     text-decoration: none;
-// }
-
-
-// .line_categorias {
-//     width: 150px;
-//     margin: 20px auto;
-//     border-top-width: 3px;
-//     border-top-style: solid;
-//     border-top-color: nth($colores, 1);
-//     border-left-width: 0px;
-//     border-right-width: 0px;
-//     border-bottom-width: 0px;
-//     opacity: 1;
-// }
-
-// .p_categorias_containet {
-//     width: 100%;
-//     display: flex;
-//     justify-content: center;
-// }
-
-// .p_categorias {
-//     width: 70%;
-//     font-family: sans-serif;
-//     color: nth($colores, 9);
-//     font-size: 16px;
-//     line-height: 1.3;
-//     text-align: center;
-//     margin-bottom: 15px;
-// }
 
 /*********** END Categorys style**********/
-
-
-
-
-
-
-
 
 
 
 /*********** flexbox Productos ***********/
 
 
-
-
 .flexbox-productos-section {
     h2 {
-        margin: 10px 0;
-        color: nth($colores, 4);
-        font-size: 48px;
-        line-height: 1.4;
-        text-align: center;
+        @extend %heading2-style;
     }
 
     hr {
-        max-width: 100%;
-        width: 90px;
-        margin: 10px 0;
-        border-top-width: 3px;
-        border-top-style: solid;
-        border-top-color: nth($colores , 1);
-        border-left-width: 0px;
-        border-right-width: 0px;
-        border-bottom-width: 0px;
-        opacity: 1;
+        @extend %linea-rosa;
     }
 
     .section_producto_container {
@@ -633,106 +336,3 @@
         }
     }
 }
-
-// .section_producto_container {
-//     display: flex;
-//     width: 100%;
-//     height: auto;
-//     align-items: center;
-//     justify-content: center;
-// }
-
-// .producto_container {
-//     width: 90%;
-//     height: 100%;
-//     display: flex;
-//     align-items: center;
-//     justify-content: space-between;
-//     flex-wrap: wrap;
-//     padding-top: 15px;
-// }
-
-// .product_card {
-//     width: 368px;
-//     height: 465px;
-//     margin-bottom: 20px;
-//     text-align: center;
-//     overflow: hidden;
-//     border: nth($colores, 16) 3px solid;
-//     transition-duration: 0.4s;
-//     box-shadow: 0 0 7px rgba(0, 0, 0, 0.4);
-// }
-
-// .product_card:hover {
-//     border: nth($colores, 17) 3px solid;
-// }
-
-
-// .producto-image {
-//     width: 90%;
-//     height: 200px;
-//     margin: 20px auto;
-// }
-
-// .producto-image img {
-//     width: auto;
-//     height: 100%;
-//     transition: 0.2s;
-// }
-
-// .producto-image img:hover {
-//     transform: scale(1.05);
-// }
-
-// .product-info h2 {
-//     font-size: 18px;
-//     padding: 0 25px;
-//     margin-bottom: 10px;
-//     height: 44px;
-//     line-height: normal;
-//     font-weight: bold;
-// }
-
-// .product-btn {
-//     width: 90%;
-//     margin: 0 auto;
-// }
-
-// .product-link {
-//     display: inline-block;
-//     margin-top: 15px;
-//     padding: 10px 0;
-//     width: 90%;
-//     height: 43px;
-//     text-decoration: none;
-//     color: nth($colores, 2);
-//     transition: 0.3s;
-//     height: auto;
-//     border: nth($colores, 2) 2px solid;
-//     font-weight: bold;
-
-// }
-
-// .product-link:hover {
-//     background-color: nth($colores, 2);
-//     color: nth($colores, 4);
-//     font-weight: bold;
-// }
-
-
-// .product-btn button {
-//     width: 100%;
-//     margin-top: 20px;
-//     padding: 8px;
-//     background: nth($colores, 2);
-//     border: 2px solid nth($colores, 2);
-//     color: nth($colores, 16);
-//     font-size: 20px;
-//     transition: 0.3s;
-// }
-
-// .product-btn button:hover {
-//     background: nth($colores, 16);
-//     border: 2px solid nth($colores, 2);
-//     color: nth($colores, 2);
-// }
