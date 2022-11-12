@@ -807,6 +807,11 @@ ul {
   border: none;
   font-weight: bold;
 }
+@media all and (max-width: 768px) {
+  .contenedor-login-registrate .containter-form-login form .contenedores-botones .login-submit-btn {
+    width: 100%;
+  }
+}
 .contenedor-login-registrate .containter-form-login form .contenedores-botones .login-google-submit-btn {
   width: 60%;
   padding: 12px 19px;
@@ -815,6 +820,11 @@ ul {
   background-color: #1AAE9F;
   border: none;
   font-weight: bold;
+}
+@media all and (max-width: 768px) {
+  .contenedor-login-registrate .containter-form-login form .contenedores-botones .login-google-submit-btn {
+    width: 100%;
+  }
 }
 .contenedor-login-registrate .containter-form-login form .contenedores-botones .login-google-submit-btn i {
   margin-right: 8px;
@@ -829,6 +839,11 @@ ul {
   padding: 12px 19px;
   margin-bottom: 20px;
   display: block;
+}
+@media all and (max-width: 768px) {
+  .contenedor-login-registrate .containter-form-login form div input {
+    width: 100%;
+  }
 }
 .contenedor-login-registrate .containter-form-registrate {
   width: 50%;
@@ -850,6 +865,11 @@ ul {
   margin-bottom: 20px;
   display: block;
 }
+@media all and (max-width: 768px) {
+  .contenedor-login-registrate .containter-form-registrate form div input {
+    width: 100%;
+  }
+}
 .contenedor-login-registrate .containter-form-registrate form button {
   width: 60%;
   padding: 12px 19px;
@@ -862,6 +882,11 @@ ul {
   padding: 12px 19px;
   margin-bottom: 20px;
   border-radius: 5px;
+}
+@media all and (max-width: 768px) {
+  .contenedor-login-registrate .containter-form-registrate form button {
+    width: 100%;
+  }
 }
 
 /* hacer listas de variables*/
