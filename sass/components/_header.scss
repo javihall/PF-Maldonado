@@ -1,5 +1,6 @@
 @import "../base/variables";
 @import "../base/listas";
+@import "../base/extends";
 
 * {
     margin: 0;
@@ -22,6 +23,17 @@
         width: 70%;
 
         div {
+            a {
+                div {
+                    img {
+                        height: 140px;
+                        width: auto;
+                        border-radius: 30px;
+
+                    }
+                }
+            }
+
             div {
                 justify-content: flex-end;
                 flex-grow: 0;
@@ -43,41 +55,34 @@
                                 color: nth($colores , 11);
                             }
                         }
-                    }
-                }
-            }
 
-            a {
-                div {
-                    img {
-                        height: 140px;
-                        width: auto;
-                        border-radius: 30px;
+                        .current_page {
+                            @extend %current-page-line;
+                        }
+
+                        .cart-icon {
+                            margin-right: 25px;
+                        }
 
                     }
                 }
             }
+
+
         }
     }
 
 }
 
 
-
-.current_page {
-    border-bottom: 2px solid nth($colores , 4);
-}
-
-.cart-icon {
-    margin-right: 25px;
-}
+/*Seccion formulario search button header*/
 
 .d-flex {
     input {
         margin: 4px;
         padding: 2px;
         border: none;
-        border-bottom: 1px black solid;
+        border-bottom: 1px nth($colores , 4) solid;
         width: 70%;
         background: transparent;
         border-radius: 0;
@@ -86,7 +91,7 @@
             margin: 4px;
             padding: 2px;
             border: none;
-            border-bottom: 1px black solid;
+            border-bottom: 1px nth($colores , 4) solid;
             width: 70%;
             background: transparent;
             border-radius: 0;
@@ -96,7 +101,7 @@
 
     button {
         background-color: transparent;
-        border: 1px nth($colores , 4)solid;
+        border: 1px nth($colores , 4) solid;
         padding: 2px 4px;
         width: 32px;
         cursor: pointer;
@@ -105,15 +110,11 @@
         color: nth($colores , 4);
 
         &:hover {
-            background-color: nth($colores , 4);
-            color: nth($colores , 11);
-            border: nth($colores , 11);
+            @extend %boton-search-header;
         }
 
         &:focus {
-            background-color: nth($colores , 4);
-            color: nth($colores , 11);
-            border: nth($colores , 11);
+            @extend %boton-search-header;
             box-shadow: none;
         }
 
@@ -124,84 +125,3 @@
         }
     }
 }
-
-
-// .boton-search {
-//     background-color: transparent;
-//     border: 1px nth($colores , 4)solid;
-//     padding: 2px 4px;
-//     width: 32px;
-//     cursor: pointer;
-//     margin: 4px;
-//     border-radius: 5px;
-//     color: nth($colores , 4);
-// }
-
-// .boton-search:hover {
-//     background-color: nth($colores , 4);
-//     color: nth($colores , 11);
-//     border: nth($colores , 11);
-// }
-
-// .boton-search:active {
-//     background-color: nth($colores , 4) !important;
-//     color: nth($colores , 11);
-//     border: nth($colores , 11);
-// }
-
-// .buscar-input {
-//     margin: 4px;
-//     padding: 2px;
-//     border: none;
-//     border-bottom: 1px black solid;
-//     width: 70%;
-//     background: transparent;
-//     border-radius: 0;
-// }
-
-// .buscar-input:focus {
-//     margin: 4px;
-//     padding: 2px;
-//     border: none;
-//     border-bottom: 1px black solid;
-//     width: 70%;
-//     background: transparent;
-//     border-radius: 0;
-//     box-shadow: none;
-
-// }
-
-// .logoimagen {
-//     height: 140px;
-//     width: auto;
-//     border-radius: 30px;
-// }
-
-// .bg_color {
-//     background-color: nth($colores , 1);
-// }
-
-// .width-header {
-//     width: 70%;
-// }
-
-// .header-end {
-//     justify-content: flex-end;
-//     flex-grow: 0;
-// }
-
-// .nav_estilo li a {
-//     text-decoration: none;
-//     color: nth($colores , 4);
-//     font-size: 16px;
-//     line-height: 20px;
-//     letter-spacing: 0.4px;
-//     font-weight: 600;
-//     padding: 0 2px;
-// }
-
-// .hover-nav-links li a:hover {
-//     border-radius: 5px;
-//     background-color: nth($colores , 4);
-//     color: nth($colores , 11);
-// }

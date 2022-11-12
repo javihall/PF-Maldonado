@@ -30,3 +30,13 @@
     background-position: center;
 
 }
+
+%current-page-line {
+    border-bottom: 2px solid nth($colores , 4);
+}
+
+%boton-search-header {
+    background-color: nth($colores , 4);
+    color: nth($colores , 11);
+    border: nth($colores , 11);
+}
