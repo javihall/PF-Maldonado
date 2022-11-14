@@ -1,5 +1,5 @@
 /*  crear variables de estilos con $nombredevariable */ /* hacer listas de variables*/
-.flexbox-productos-section hr, .seccion-grid-categorias hr, .main .main-containter section .containter-main-banner hr {
+.prod-relacionado-seccion hr, .container-contacto-info hr, .flexbox-productos-section hr, .seccion-grid-categorias hr, .main .main-containter section .containter-main-banner hr {
   max-width: 100%;
   width: 90px;
   margin: 10px 0;
@@ -255,7 +255,7 @@ ul {
 /* elimina imagen logo del footer para mobile */
 /*********** END FOOTER copy***********/
 /* hacer listas de variables*/
-.flexbox-productos-section hr, .seccion-grid-categorias hr, .main .main-containter section .containter-main-banner hr {
+.prod-relacionado-seccion hr, .container-contacto-info hr, .flexbox-productos-section hr, .seccion-grid-categorias hr, .main .main-containter section .containter-main-banner hr {
   max-width: 100%;
   width: 90px;
   margin: 10px 0;
@@ -670,6 +670,47 @@ ul {
 
 /*  crear variables de estilos con $nombredevariable */ /* hacer listas de variables*/
 /* hacer listas de variables*/
+.prod-relacionado-seccion hr, .container-contacto-info hr, .main .main-containter section .containter-main-banner hr, .seccion-grid-categorias hr, .flexbox-productos-section hr {
+  max-width: 100%;
+  width: 90px;
+  margin: 10px 0;
+  border-top-width: 3px;
+  border-top-style: solid;
+  border-top-color: #ffd8cb;
+  border-left-width: 0px;
+  border-right-width: 0px;
+  border-bottom-width: 0px;
+  opacity: 1;
+}
+
+.seccion-grid-categorias h2, .flexbox-productos-section h2 {
+  margin: 10px 0;
+  color: #030303;
+  font-size: 48px;
+  line-height: 1.4;
+  text-align: center;
+}
+
+.seccion-grid-categorias .grid_category .category1, .seccion-grid-categorias .grid_category .category2, .seccion-grid-categorias .grid_category .category3, .seccion-grid-categorias .grid_category .category4 {
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  background-size: cover;
+  background-position: center;
+}
+
+.header-contenedor nav div div ul li .current_page {
+  border-bottom: 2px solid #030303;
+}
+
+.d-flex button:hover, .d-flex button:focus {
+  background-color: #030303;
+  color: #F9F9F9;
+  border: #F9F9F9;
+}
+
 .breadcrumb-contenedor {
   margin-top: 25px;
 }
@@ -714,7 +755,6 @@ ul {
   color: #030303;
   padding: 1px 12px;
   font-weight: bold;
-  cursor: pointer;
   transition: all 0.3s ease;
   border-radius: 20px;
   border: 1px solid #030303;
@@ -726,7 +766,7 @@ ul {
 .contenedor-contacto .containter-formulario div form button:hover {
   background: #030303;
   color: #F9F9F9;
-  border: 1px solid #f7c2b0;
+  border: 1px solid #030303;
 }
 @media all and (max-width: 768px) {
   .contenedor-contacto {
@@ -739,18 +779,6 @@ ul {
 /* columna otra info */
 .container-contacto-info {
   width: 50%;
-}
-.container-contacto-info hr {
-  max-width: 100%;
-  width: 90px;
-  margin: 10px 0;
-  border-top-width: 3px;
-  border-top-style: solid;
-  border-top-color: #ffd8cb;
-  border-left-width: 0px;
-  border-right-width: 0px;
-  border-bottom-width: 0px;
-  opacity: 1;
 }
 .container-contacto-info div {
   display: flex;
@@ -890,6 +918,47 @@ ul {
 }
 
 /* hacer listas de variables*/
+.prod-relacionado-seccion hr, .main .main-containter section .containter-main-banner hr, .seccion-grid-categorias hr, .flexbox-productos-section hr, .container-contacto-info hr {
+  max-width: 100%;
+  width: 90px;
+  margin: 10px 0;
+  border-top-width: 3px;
+  border-top-style: solid;
+  border-top-color: #ffd8cb;
+  border-left-width: 0px;
+  border-right-width: 0px;
+  border-bottom-width: 0px;
+  opacity: 1;
+}
+
+.seccion-grid-categorias h2, .flexbox-productos-section h2 {
+  margin: 10px 0;
+  color: #030303;
+  font-size: 48px;
+  line-height: 1.4;
+  text-align: center;
+}
+
+.seccion-grid-categorias .grid_category .category1, .seccion-grid-categorias .grid_category .category2, .seccion-grid-categorias .grid_category .category3, .seccion-grid-categorias .grid_category .category4 {
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  background-size: cover;
+  background-position: center;
+}
+
+.header-contenedor nav div div ul li .current_page {
+  border-bottom: 2px solid #030303;
+}
+
+.d-flex button:hover, .d-flex button:focus {
+  background-color: #030303;
+  color: #F9F9F9;
+  border: #F9F9F9;
+}
+
 .breadcrumb-contenedor {
   margin-top: 25px;
 }
@@ -899,6 +968,7 @@ ul {
   margin-top: 56px;
   /*Imagenes/carousel PDP*/
   /*----------------*/
+  /* Detalle del producto*/
 }
 @media all and (max-width: 768px) {
   .pdp-container {
@@ -935,7 +1005,7 @@ ul {
   padding: 2px;
   margin: 2px;
   border: 1px solid #acacac;
-  background-color: white;
+  background-color: #F9F9F9;
 }
 .pdp-container .carousel-productos .imagen-prod-btn button img {
   width: 100%;
@@ -994,7 +1064,8 @@ ul {
   color: #f3906f;
 }
 
-.h2-productos-relacionados {
+/* Producto relacionado */
+.prod-relacionado-seccion .h2-productos-relacionados {
   margin-bottom: 10px;
   margin-top: 25px;
   color: #030303;
@@ -1002,15 +1073,14 @@ ul {
   line-height: 1.2;
   text-align: center;
 }
-
-.section_producto_container {
+.prod-relacionado-seccion .section_producto_container {
   display: flex;
   width: 100%;
   height: auto;
   align-items: center;
   justify-content: center;
 }
-.section_producto_container .producto_container {
+.prod-relacionado-seccion .section_producto_container .producto_container {
   width: 90%;
   height: 100%;
   display: flex;
@@ -1019,7 +1089,7 @@ ul {
   flex-wrap: wrap;
   padding-top: 15px;
 }
-.section_producto_container .producto_container .product_card {
+.prod-relacionado-seccion .section_producto_container .producto_container .product_card {
   width: 368px;
   height: 465px;
   margin-bottom: 20px;
@@ -1029,23 +1099,23 @@ ul {
   transition-duration: 0.4s;
   box-shadow: 0 0 7px rgba(0, 0, 0, 0.4);
 }
-.section_producto_container .producto_container .product_card:hover {
+.prod-relacionado-seccion .section_producto_container .producto_container .product_card:hover {
   border: #acacac 3px solid;
 }
-.section_producto_container .producto_container .product_card .producto-image {
+.prod-relacionado-seccion .section_producto_container .producto_container .product_card .producto-image {
   width: 90%;
   height: 200px;
   margin: 20px auto;
 }
-.section_producto_container .producto_container .product_card .producto-image img {
+.prod-relacionado-seccion .section_producto_container .producto_container .product_card .producto-image img {
   width: auto;
   height: 100%;
   transition: 0.2s;
 }
-.section_producto_container .producto_container .product_card .producto-image img:hover {
+.prod-relacionado-seccion .section_producto_container .producto_container .product_card .producto-image img:hover {
   transform: scale(1.05);
 }
-.section_producto_container .producto_container .product_card .product-info h2 {
+.prod-relacionado-seccion .section_producto_container .producto_container .product_card .product-info h2 {
   font-size: 18px;
   padding: 0 25px;
   margin-bottom: 10px;
@@ -1053,11 +1123,11 @@ ul {
   line-height: normal;
   font-weight: bold;
 }
-.section_producto_container .producto_container .product_card .product-btn {
+.prod-relacionado-seccion .section_producto_container .producto_container .product_card .product-btn {
   width: 90%;
   margin: 0 auto;
 }
-.section_producto_container .producto_container .product_card .product-btn button {
+.prod-relacionado-seccion .section_producto_container .producto_container .product_card .product-btn button {
   width: 100%;
   margin-top: 20px;
   padding: 8px;
@@ -1067,12 +1137,12 @@ ul {
   font-size: 20px;
   transition: 0.3s;
 }
-.section_producto_container .producto_container .product_card .product-btn button:hover {
+.prod-relacionado-seccion .section_producto_container .producto_container .product_card .product-btn button:hover {
   background: #ffffff;
   border: 2px solid #f7c2b0;
   color: #f7c2b0;
 }
-.section_producto_container .producto_container .product_card .product-link {
+.prod-relacionado-seccion .section_producto_container .producto_container .product_card .product-link {
   display: inline-block;
   margin-top: 15px;
   padding: 10px 0;
@@ -1085,13 +1155,13 @@ ul {
   border: #f7c2b0 2px solid;
   font-weight: bold;
 }
-.section_producto_container .producto_container .product_card .product-link:hover {
+.prod-relacionado-seccion .section_producto_container .producto_container .product_card .product-link:hover {
   background-color: #f7c2b0;
   color: #030303;
   font-weight: bold;
 }
 
-.main .main-containter section .containter-main-banner hr, .seccion-grid-categorias hr, .flexbox-productos-section hr {
+.main .main-containter section .containter-main-banner hr, .seccion-grid-categorias hr, .flexbox-productos-section hr, .container-contacto-info hr, .prod-relacionado-seccion hr {
   max-width: 100%;
   width: 90px;
   margin: 10px 0;
