@@ -52,7 +52,7 @@
                     margin-top: 10px;
                     color: nth($colores, 4);
                     padding: 1px 12px;
-                    font-weight: bold;  
+                    font-weight: bold;
                     transition: all 0.3s ease;
                     border-radius: 20px;
                     border: 1px solid nth($colores, 4);
@@ -103,5 +103,13 @@
     @media all and (max-width: 768px) {
         width: 70%;
         margin-top: 34px;
+    }
+
+    iframe {
+        @media all and (max-width: 768px) {
+            width: 100%;
+        }
+
+        padding-bottom: 25px;
     }
 }
