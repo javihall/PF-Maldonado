@@ -40,3 +40,12 @@
     color: nth($colores , 11);
     border: nth($colores , 11);
 }
+
+%btn-submit-google {
+    width: 60%;
+    padding: 12px 19px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: none;
+    font-weight: bold;
+}

@@ -1,5 +1,5 @@
 @import "../base/listas";
-
+@import "../base/extends";
 
 .breadcrumb-contenedor {
     margin-top: 25px;
@@ -30,14 +30,8 @@
                 margin-top: 30px;
 
                 .login-submit-btn {
-                    width: 60%;
-                    padding: 12px 19px;
-                    margin-bottom: 20px;
-                    border-radius: 5px;
-
-                    background-color: #6558F5;
-                    border: none;
-                    font-weight: bold;
+                    @extend %btn-submit-google;
+                    background-color: nth($colores , 20);
 
                     @media all and (max-width: 768px){
                         width: 100%;
@@ -45,14 +39,8 @@
                 }
 
                 .login-google-submit-btn {
-                    width: 60%;
-                    padding: 12px 19px;
-                    margin-bottom: 20px;
-                    border-radius: 5px;
-
-                    background-color: #1AAE9F;
-                    border: none;
-                    font-weight: bold;
+                    @extend %btn-submit-google;
+                    background-color: nth($colores , 19);
 
                     @media all and (max-width: 768px){
                         width: 100%;
@@ -85,7 +73,7 @@
         }
     }
 
-    /* ------------------------------*/
+    /* formulario registrate */
 
     .containter-form-registrate {
         width: 50%;
@@ -115,20 +103,9 @@
             }
 
             button {
-                width: 60%;
-                padding: 12px 19px;
-                margin-bottom: 20px;
-                border-radius: 5px;
-
-                background-color: #6558F5;
-                border: none;
-                font-weight: bold;
-
-                width: 60%;
-                padding: 12px 19px;
-                margin-bottom: 20px;
-                border-radius: 5px;
-
+                @extend %btn-submit-google;
+                background-color: nth($colores , 20);
+            
                 @media all and (max-width: 768px) {
                     width: 100%;
                 }
@@ -136,80 +113,3 @@
         }
     }
 }
-
-// .containter-form-login,
-// .containter-form-registrate {
-//     width: 50%;
-
-// }
-
-
-// .input-group-login input,
-// .input-group-registrate input {
-//     width: 60%;
-//     border-radius: 5px;
-//     border: 1px solid;
-//     padding: 12px 19px;
-//     margin-bottom: 20px;
-//     display: block;
-// }
-
-// .input-group-login label,
-// .input-group-registrate label {
-//     margin-bottom: 15px;
-// }
-
-// .contenedores-botones {
-//     display: flex;
-//     flex-direction: column;
-//     margin-top: 30px;
-// }
-
-// .contenedores-botones button {
-//     width: 60%;
-//     padding: 12px 19px;
-//     margin-bottom: 20px;
-//     border-radius: 5px;
-// }
-
-// .login-submit-btn {
-//     background-color: #6558F5;
-//     border: none;
-//     font-weight: bold;
-// }
-
-// .login-google-submit-btn {
-//     background-color: #1AAE9F;
-//     border: none;
-//     font-weight: bold;
-
-// }
-
-// .crear-cuenta-btn {
-//     width: 60%;
-//     padding: 12px 19px;
-//     margin-bottom: 20px;
-//     border-radius: 5px;
-// }
-
-// .google-icon {
-//     margin-right: 8px;
-// }
-
-
-// @media all and (max-width: 768px) {
-//     .contenedor-login-registrate {
-//         flex-direction: column;
-//         padding: 0;
-//         align-items: center;
-//     }
-
-//     .containter-form-login,
-//     .containter-form-registrate {
-//         width: 70%;
-//     }
-
-//     .containter-form-registrate {
-//         margin-top: 34px;
-//     }
-// }

@@ -1,4 +1,5 @@
-/*  crear variables de estilos con $nombredevariable */ /* hacer listas de variables*/
+/* hacer listas de variables*/
+/*20*/
 .prod-relacionado-seccion hr, .container-contacto-info hr, .flexbox-productos-section hr, .seccion-grid-categorias hr, .main .main-containter section .containter-main-banner hr {
   max-width: 100%;
   width: 90px;
@@ -38,6 +39,15 @@
   background-color: #030303;
   color: #F9F9F9;
   border: #F9F9F9;
+}
+
+.contenedor-login-registrate .containter-form-registrate form button, .contenedor-login-registrate .containter-form-login form .contenedores-botones .login-google-submit-btn, .contenedor-login-registrate .containter-form-login form .contenedores-botones .login-submit-btn {
+  width: 60%;
+  padding: 12px 19px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: none;
+  font-weight: bold;
 }
 
 * {
@@ -125,136 +135,7 @@
 }
 
 /* hacer listas de variables*/
-/* correccion para bootstrap */
-ul {
-  padding-left: 0;
-}
-
-.footer {
-  width: 100%;
-  background-color: #F9F9F9;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-bottom: 10px;
-}
-.footer .footer_container {
-  width: 70%;
-  min-height: 200px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.footer .footer_container .row {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: flex-start;
-  width: 100%;
-}
-.footer .footer_container .row .col {
-  min-width: 250px;
-  color: #212121;
-  max-width: 380px;
-}
-.footer .footer_container .row .col form button {
-  margin-top: 10px;
-  color: #030303;
-  padding: 1px 12px;
-  font-weight: bold;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  border-radius: 20px;
-  border: 1px solid #030303;
-  background: #ffd8cb;
-  text-align: center;
-  text-decoration: none;
-  font-size: 14px;
-}
-.footer .footer_container .row .col form button:hover {
-  background: #030303;
-  color: #F9F9F9;
-  border: 1px solid #f7c2b0;
-}
-.footer .footer_container .row .col hr {
-  max-width: 100%;
-  width: 90px;
-  margin: 10px 0;
-  border-top-width: 3px;
-  border-top-style: solid;
-  border-top-color: #ffd8cb;
-  border-left-width: 0px;
-  border-right-width: 0px;
-  border-bottom-width: 0px;
-  opacity: 1;
-}
-.footer .footer_container .row .col h3 {
-  color: #050505;
-  font-size: 21px;
-  padding-top: 10px;
-}
-
-.sm-icons li {
-  display: inline-block;
-  margin: 5px;
-}
-.sm-icons li a i {
-  color: #f7c2b0;
-  font-size: 24px;
-}
-.sm-icons li a i:hover {
-  color: #030303;
-}
-
-.navegacion-list {
-  list-style: none;
-}
-.navegacion-list li a {
-  text-decoration: none;
-  color: #030303;
-  transition: all 0.5s;
-}
-.navegacion-list li a:hover {
-  text-decoration: underline;
-  background-color: #F5F5F5;
-}
-
-.info-contacto-list li {
-  list-style: none;
-}
-.info-contacto-list li i {
-  color: #f7c2b0;
-  font-size: 18px;
-  padding: 10px;
-}
-
-/***********FOOTER copy***********/
-.footer_copy {
-  display: flex;
-  color: #030303;
-  justify-content: center;
-  align-items: center;
-  min-height: 61px;
-  flex-wrap: wrap;
-  background-color: #EAEAEA;
-}
-.footer_copy img {
-  width: 70px;
-}
-@media all and (max-width: 768px) {
-  .footer_copy img {
-    display: none;
-  }
-}
-@media all and (max-width: 768px) {
-  .footer_copy small {
-    text-align: center;
-  }
-}
-
-/* elimina imagen logo del footer para mobile */
-/*********** END FOOTER copy***********/
-/* hacer listas de variables*/
+/*20*/
 .prod-relacionado-seccion hr, .container-contacto-info hr, .flexbox-productos-section hr, .seccion-grid-categorias hr, .main .main-containter section .containter-main-banner hr {
   max-width: 100%;
   width: 90px;
@@ -294,6 +175,191 @@ ul {
   background-color: #030303;
   color: #F9F9F9;
   border: #F9F9F9;
+}
+
+.contenedor-login-registrate .containter-form-registrate form button, .contenedor-login-registrate .containter-form-login form .contenedores-botones .login-google-submit-btn, .contenedor-login-registrate .containter-form-login form .contenedores-botones .login-submit-btn {
+  width: 60%;
+  padding: 12px 19px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: none;
+  font-weight: bold;
+}
+
+/* correccion para bootstrap */
+ul {
+  padding-left: 0;
+}
+
+/* footer principal*/
+.footer {
+  width: 100%;
+  background-color: #F9F9F9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 10px;
+}
+.footer .footer_container {
+  width: 70%;
+  min-height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer .footer_container .row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+}
+.footer .footer_container .row .col {
+  min-width: 250px;
+  color: #212121;
+  max-width: 380px;
+}
+.footer .footer_container .row .col h3 {
+  color: #050505;
+  font-size: 21px;
+  padding-top: 10px;
+}
+.footer .footer_container .row .col hr {
+  max-width: 100%;
+  width: 90px;
+  margin: 10px 0;
+  border-top-width: 3px;
+  border-top-style: solid;
+  border-top-color: #ffd8cb;
+  border-left-width: 0px;
+  border-right-width: 0px;
+  border-bottom-width: 0px;
+  opacity: 1;
+}
+.footer .footer_container .row .col form button {
+  margin-top: 10px;
+  color: #030303;
+  padding: 1px 12px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  border-radius: 20px;
+  border: 1px solid #030303;
+  background: #ffd8cb;
+  text-align: center;
+  text-decoration: none;
+  font-size: 14px;
+}
+.footer .footer_container .row .col form button:hover {
+  background: #030303;
+  color: #F9F9F9;
+  border: 1px solid #f7c2b0;
+}
+.footer .footer_container .row .col .sm-icons li {
+  display: inline-block;
+  margin: 5px;
+}
+.footer .footer_container .row .col .sm-icons li a i {
+  color: #f7c2b0;
+  font-size: 24px;
+}
+.footer .footer_container .row .col .sm-icons li a i:hover {
+  color: #030303;
+}
+.footer .footer_container .row .col .navegacion-list {
+  list-style: none;
+}
+.footer .footer_container .row .col .navegacion-list li a {
+  text-decoration: none;
+  color: #030303;
+  transition: all 0.5s;
+}
+.footer .footer_container .row .col .navegacion-list li a:hover {
+  text-decoration: underline;
+  background-color: #F5F5F5;
+}
+.footer .footer_container .row .col .info-contacto-list li {
+  list-style: none;
+}
+.footer .footer_container .row .col .info-contacto-list li i {
+  color: #f7c2b0;
+  font-size: 18px;
+  padding: 10px;
+}
+
+/***********FOOTER copy***********/
+.footer_copy {
+  display: flex;
+  color: #030303;
+  justify-content: center;
+  align-items: center;
+  min-height: 61px;
+  flex-wrap: wrap;
+  background-color: #EAEAEA;
+}
+.footer_copy img {
+  width: 70px;
+}
+@media all and (max-width: 768px) {
+  .footer_copy img {
+    display: none;
+  }
+}
+@media all and (max-width: 768px) {
+  .footer_copy small {
+    text-align: center;
+  }
+}
+
+/* hacer listas de variables*/
+/*20*/
+.prod-relacionado-seccion hr, .container-contacto-info hr, .flexbox-productos-section hr, .seccion-grid-categorias hr, .main .main-containter section .containter-main-banner hr {
+  max-width: 100%;
+  width: 90px;
+  margin: 10px 0;
+  border-top-width: 3px;
+  border-top-style: solid;
+  border-top-color: #ffd8cb;
+  border-left-width: 0px;
+  border-right-width: 0px;
+  border-bottom-width: 0px;
+  opacity: 1;
+}
+
+.flexbox-productos-section h2, .seccion-grid-categorias h2 {
+  margin: 10px 0;
+  color: #030303;
+  font-size: 48px;
+  line-height: 1.4;
+  text-align: center;
+}
+
+.seccion-grid-categorias .grid_category .category4, .seccion-grid-categorias .grid_category .category3, .seccion-grid-categorias .grid_category .category2, .seccion-grid-categorias .grid_category .category1 {
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  background-size: cover;
+  background-position: center;
+}
+
+.header-contenedor nav div div ul li .current_page {
+  border-bottom: 2px solid #030303;
+}
+
+.d-flex button:hover, .d-flex button:focus {
+  background-color: #030303;
+  color: #F9F9F9;
+  border: #F9F9F9;
+}
+
+.contenedor-login-registrate .containter-form-registrate form button, .contenedor-login-registrate .containter-form-login form .contenedores-botones .login-google-submit-btn, .contenedor-login-registrate .containter-form-login form .contenedores-botones .login-submit-btn {
+  width: 60%;
+  padding: 12px 19px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: none;
+  font-weight: bold;
 }
 
 .main {
@@ -354,7 +420,6 @@ ul {
   color: #f3906f;
 }
 
-/*********** END Main banner **********/
 /*********** Grid Categorys style**********/
 .seccion-grid-categorias .p_categorias_containet {
   width: 100%;
@@ -458,7 +523,6 @@ ul {
   text-align: center;
 }
 
-/*********** END Categorys style**********/
 /*********** flexbox Productos ***********/
 .flexbox-productos-section .section_producto_container {
   display: flex;
@@ -548,6 +612,58 @@ ul {
   font-weight: bold;
 }
 
+/* hacer listas de variables*/
+/*20*/
+.prod-relacionado-seccion hr, .container-contacto-info hr, .main .main-containter section .containter-main-banner hr, .seccion-grid-categorias hr, .flexbox-productos-section hr {
+  max-width: 100%;
+  width: 90px;
+  margin: 10px 0;
+  border-top-width: 3px;
+  border-top-style: solid;
+  border-top-color: #ffd8cb;
+  border-left-width: 0px;
+  border-right-width: 0px;
+  border-bottom-width: 0px;
+  opacity: 1;
+}
+
+.seccion-grid-categorias h2, .flexbox-productos-section h2 {
+  margin: 10px 0;
+  color: #030303;
+  font-size: 48px;
+  line-height: 1.4;
+  text-align: center;
+}
+
+.seccion-grid-categorias .grid_category .category1, .seccion-grid-categorias .grid_category .category2, .seccion-grid-categorias .grid_category .category3, .seccion-grid-categorias .grid_category .category4 {
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  background-size: cover;
+  background-position: center;
+}
+
+.header-contenedor nav div div ul li .current_page {
+  border-bottom: 2px solid #030303;
+}
+
+.d-flex button:hover, .d-flex button:focus {
+  background-color: #030303;
+  color: #F9F9F9;
+  border: #F9F9F9;
+}
+
+.contenedor-login-registrate .containter-form-registrate form button, .contenedor-login-registrate .containter-form-login form .contenedores-botones .login-google-submit-btn, .contenedor-login-registrate .containter-form-login form .contenedores-botones .login-submit-btn {
+  width: 60%;
+  padding: 12px 19px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: none;
+  font-weight: bold;
+}
+
 /* texto pre acordion */
 .preguntas_introinfo p {
   margin: 15px;
@@ -587,7 +703,7 @@ ul {
 }
 .preguntas_section .preguntas_container .shadow-custom div h2 button:hover {
   background-color: #f7c2b0;
-  color: black;
+  color: #030303;
   transition: 1s;
 }
 .preguntas_section .preguntas_container .shadow-custom div h2 button:focus {
@@ -595,7 +711,7 @@ ul {
   outline: #f3906f 1px solid;
 }
 .preguntas_section .preguntas_container .shadow-custom div h2 button:not(.collapsed) {
-  color: rgb(255, 255, 255);
+  color: #F9F9F9;
   font-weight: bold;
   background-color: #f3906f;
   border-radius: 25px;
@@ -651,7 +767,7 @@ ul {
 }
 .contenedor_acordion2 .shadow-custom div h2 button:hover {
   background-color: #f7c2b0;
-  color: black;
+  color: #030303;
   transition: 1s;
 }
 .contenedor_acordion2 .shadow-custom div h2 button:focus {
@@ -659,7 +775,7 @@ ul {
   outline: #f3906f 1px solid;
 }
 .contenedor_acordion2 .shadow-custom div h2 button:not(.collapsed) {
-  color: rgb(255, 255, 255);
+  color: #F9F9F9;
   font-weight: bold;
   background-color: #f3906f;
   border-radius: 25px;
@@ -668,8 +784,8 @@ ul {
   font-size: 14px;
 }
 
-/*  crear variables de estilos con $nombredevariable */ /* hacer listas de variables*/
 /* hacer listas de variables*/
+/*20*/
 .prod-relacionado-seccion hr, .container-contacto-info hr, .main .main-containter section .containter-main-banner hr, .seccion-grid-categorias hr, .flexbox-productos-section hr {
   max-width: 100%;
   width: 90px;
@@ -709,6 +825,15 @@ ul {
   background-color: #030303;
   color: #F9F9F9;
   border: #F9F9F9;
+}
+
+.contenedor-login-registrate .containter-form-registrate form button, .contenedor-login-registrate .containter-form-login form .contenedores-botones .login-google-submit-btn, .contenedor-login-registrate .containter-form-login form .contenedores-botones .login-submit-btn {
+  width: 60%;
+  padding: 12px 19px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: none;
+  font-weight: bold;
 }
 
 .breadcrumb-contenedor {
@@ -796,6 +921,57 @@ ul {
 }
 
 /* hacer listas de variables*/
+/*20*/
+.prod-relacionado-seccion hr, .main .main-containter section .containter-main-banner hr, .seccion-grid-categorias hr, .flexbox-productos-section hr, .container-contacto-info hr {
+  max-width: 100%;
+  width: 90px;
+  margin: 10px 0;
+  border-top-width: 3px;
+  border-top-style: solid;
+  border-top-color: #ffd8cb;
+  border-left-width: 0px;
+  border-right-width: 0px;
+  border-bottom-width: 0px;
+  opacity: 1;
+}
+
+.seccion-grid-categorias h2, .flexbox-productos-section h2 {
+  margin: 10px 0;
+  color: #030303;
+  font-size: 48px;
+  line-height: 1.4;
+  text-align: center;
+}
+
+.seccion-grid-categorias .grid_category .category1, .seccion-grid-categorias .grid_category .category2, .seccion-grid-categorias .grid_category .category3, .seccion-grid-categorias .grid_category .category4 {
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  background-size: cover;
+  background-position: center;
+}
+
+.header-contenedor nav div div ul li .current_page {
+  border-bottom: 2px solid #030303;
+}
+
+.d-flex button:hover, .d-flex button:focus {
+  background-color: #030303;
+  color: #F9F9F9;
+  border: #F9F9F9;
+}
+
+.contenedor-login-registrate .containter-form-registrate form button, .contenedor-login-registrate .containter-form-login form .contenedores-botones .login-google-submit-btn, .contenedor-login-registrate .containter-form-login form .contenedores-botones .login-submit-btn {
+  width: 60%;
+  padding: 12px 19px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: none;
+  font-weight: bold;
+}
+
 .breadcrumb-contenedor {
   margin-top: 25px;
 }
@@ -804,7 +980,7 @@ ul {
 .contenedor-login-registrate {
   display: flex;
   padding: 15px 0;
-  /* ------------------------------*/
+  /* formulario registrate */
 }
 @media all and (max-width: 768px) {
   .contenedor-login-registrate {
@@ -827,13 +1003,7 @@ ul {
   margin-top: 30px;
 }
 .contenedor-login-registrate .containter-form-login form .contenedores-botones .login-submit-btn {
-  width: 60%;
-  padding: 12px 19px;
-  margin-bottom: 20px;
-  border-radius: 5px;
   background-color: #6558F5;
-  border: none;
-  font-weight: bold;
 }
 @media all and (max-width: 768px) {
   .contenedor-login-registrate .containter-form-login form .contenedores-botones .login-submit-btn {
@@ -841,13 +1011,7 @@ ul {
   }
 }
 .contenedor-login-registrate .containter-form-login form .contenedores-botones .login-google-submit-btn {
-  width: 60%;
-  padding: 12px 19px;
-  margin-bottom: 20px;
-  border-radius: 5px;
   background-color: #1AAE9F;
-  border: none;
-  font-weight: bold;
 }
 @media all and (max-width: 768px) {
   .contenedor-login-registrate .containter-form-login form .contenedores-botones .login-google-submit-btn {
@@ -899,17 +1063,7 @@ ul {
   }
 }
 .contenedor-login-registrate .containter-form-registrate form button {
-  width: 60%;
-  padding: 12px 19px;
-  margin-bottom: 20px;
-  border-radius: 5px;
   background-color: #6558F5;
-  border: none;
-  font-weight: bold;
-  width: 60%;
-  padding: 12px 19px;
-  margin-bottom: 20px;
-  border-radius: 5px;
 }
 @media all and (max-width: 768px) {
   .contenedor-login-registrate .containter-form-registrate form button {
@@ -918,6 +1072,7 @@ ul {
 }
 
 /* hacer listas de variables*/
+/*20*/
 .prod-relacionado-seccion hr, .main .main-containter section .containter-main-banner hr, .seccion-grid-categorias hr, .flexbox-productos-section hr, .container-contacto-info hr {
   max-width: 100%;
   width: 90px;
@@ -957,6 +1112,15 @@ ul {
   background-color: #030303;
   color: #F9F9F9;
   border: #F9F9F9;
+}
+
+.contenedor-login-registrate .containter-form-login form .contenedores-botones .login-submit-btn, .contenedor-login-registrate .containter-form-login form .contenedores-botones .login-google-submit-btn, .contenedor-login-registrate .containter-form-registrate form button {
+  width: 60%;
+  padding: 12px 19px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: none;
+  font-weight: bold;
 }
 
 .breadcrumb-contenedor {
@@ -1161,6 +1325,8 @@ ul {
   font-weight: bold;
 }
 
+/* hacer listas de variables*/
+/*20*/
 .main .main-containter section .containter-main-banner hr, .seccion-grid-categorias hr, .flexbox-productos-section hr, .container-contacto-info hr, .prod-relacionado-seccion hr {
   max-width: 100%;
   width: 90px;
@@ -1200,6 +1366,15 @@ ul {
   background-color: #030303;
   color: #F9F9F9;
   border: #F9F9F9;
+}
+
+.contenedor-login-registrate .containter-form-login form .contenedores-botones .login-submit-btn, .contenedor-login-registrate .containter-form-login form .contenedores-botones .login-google-submit-btn, .contenedor-login-registrate .containter-form-registrate form button {
+  width: 60%;
+  padding: 12px 19px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: none;
+  font-weight: bold;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,3 +1,7 @@
+@import "../base/listas";
+@import "../base/extends";
+
+
 /* texto pre acordion */
 
 .preguntas_introinfo {
@@ -7,25 +11,12 @@
         font-size: 24px;
 
         a {
-            color: #f7c2b0;
+            color: nth($colores, 2);
         }
     }
 }
 
-
-// .preguntas_introinfo p {
-//     margin: 15px;
-//     text-align: center;
-//     font-size: 24px;
-// }
-
-// .preguntas_introinfo p a {
-//     color: #f7c2b0;
-// }
-
-
 /* primer acordion */
-
 
 .preguntas_section {
     padding-top: 24px;
@@ -58,20 +49,20 @@
                         font-weight: bold;
 
                         &:hover {
-                            background-color: #f7c2b0;
-                            color: black;
+                            background-color: nth($colores, 2);
+                            color: nth($colores, 4);
                             transition: 1s;
                         }
 
                         &:focus {
                             box-shadow: none;
-                            outline: #f3906f 1px solid;
+                            outline: nth($colores, 3) 1px solid;
                         }
 
                         &:not(.collapsed) {
-                            color: rgb(255, 255, 255);
+                            color: nth($colores, 11);
                             font-weight: bold;
-                            background-color: #f3906f;
+                            background-color: nth($colores, 3);
                             border-radius: 25px;
                         }
                     }
@@ -83,7 +74,7 @@
 
 
                         .color_p_custom {
-                            color: #f3906f;
+                            color: nth($colores, 3);
                         }
                     }
                 }
@@ -100,35 +91,6 @@
         display: block;
     }
 }
-
-// .preguntas_section {
-//     padding-top: 24px;
-//     display: flex;
-//     margin: 8px 0;
-// }
-
-// @media all and (max-width:768px) {
-//     .preguntas_section {
-//         display: block;
-//     }
-// }
-
-// .preguntas_container {
-//     width: 50%;
-//     height: auto;
-// }
-
-// @media all and (max-width:768px) {
-//     .preguntas_container {
-//         width: 100%;
-//     }
-// }
-
-// .preguntas_frec_headings h2 {
-//     font-size: 24px;
-//     font-weight: bold;
-//     padding: 8px;
-// }
 
 /* contenedor info (retiro de compras) */
 
@@ -148,19 +110,6 @@
         width: 100%;
     }
 }
-
-// .contenedor_side_info {
-//     width: 50%;
-//     height: auto;
-//     padding-left: 24px;
-// }
-
-// @media all and (max-width:768px) {
-//     .contenedor_side_info {
-//         padding-top: 15px;
-//         width: 100%;
-//     }
-// }
 
 
 /* segundo acordion  */
@@ -183,20 +132,20 @@
                     font-weight: bold;
 
                     &:hover {
-                        background-color: #f7c2b0;
-                        color: black;
+                        background-color: nth($colores, 2);
+                        color: nth($colores, 4);
                         transition: 1s;
                     }
 
                     &:focus {
                         box-shadow: none;
-                        outline: #f3906f 1px solid;
+                        outline: nth($colores, 3) 1px solid;
                     }
 
                     &:not(.collapsed) {
-                        color: rgb(255, 255, 255);
+                        color: nth($colores, 11);
                         font-weight: bold;
-                        background-color: #f3906f;
+                        background-color: nth($colores, 3);
                         border-radius: 25px;
                     }
                 }
@@ -212,59 +161,3 @@
     }
 }
 
-
-
-// .preguntas_info p {
-//     font-size: 14px;
-// }
-
-
-
-// .accordion-body {
-//     font-size: 14px;
-//    
-// }
-
-// .color_p_custom {
-//     color: #f3906f;
-// }
-
-// .shadow-custom {
-
-//     width: 90%;
-//     border-radius: 25px;
-//     box-shadow: 0 0 20px 0 rgb(0 0 0 / 20%);
-// }
-
-
-// .color-custom-btn:hover {
-//     background-color: #f7c2b0;
-//     color: black;
-//     transition: 1s;
-// }
-
-// .color-custom-btn:focus {
-//     box-shadow: none;
-//     outline: #f3906f 1px solid;
-
-// }
-
-// .color-custom-btn:not(.collapsed) {
-//     color: rgb(255, 255, 255);
-//     font-weight: bold;
-//     background-color: #f3906f;
-//     border-radius: 25px;
-// }
-
-// .border-radius-btn {
-//     border-radius: 25px !important;
-// }
-
-// .color-custom-btn {
-//     border-radius: 25px !important;
-//     font-weight: bold;
-// }
-
-// .contenedor_acordion2 {
-//     padding-bottom: 15px;
-// }

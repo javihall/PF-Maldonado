@@ -1,10 +1,13 @@
 @import "../base/listas";
+@import "../base/extends";
 
 /* correccion para bootstrap */
 ul {
     padding-left: 0;
 }
 
+
+/* footer principal*/
 .footer {
     width: 100%;
     background-color: nth($colores , 11);
@@ -13,24 +16,46 @@ ul {
     align-items: center;
     padding-bottom: 10px;
 
-    & .footer_container {
+    .footer_container {
         width: 70%;
         min-height: 200px;
         display: flex;
         justify-content: center;
         align-items: center;
 
-        & .row {
+        .row {
             display: flex;
             flex-wrap: wrap;
             justify-content: space-between;
             align-items: flex-start;
             width: 100%;
 
-            & .col {
+            .col {
                 min-width: 250px;
                 color: nth($colores , 8);
                 max-width: 380px;
+
+                h3 {
+                    color: nth($colores , 5);
+                    font-size: 21px;
+                    padding-top: 10px;
+
+                }
+
+                hr {
+                    max-width: 100%;
+                    width: 90px;
+                    margin: 10px 0;
+                    border-top-width: 3px;
+                    border-top-style: solid;
+                    border-top-color: nth($colores , 1);
+                    border-left-width: 0px;
+                    border-right-width: 0px;
+                    border-bottom-width: 0px;
+                    opacity: 1;
+                }
+
+               
 
                 form {
                     button {
@@ -38,7 +63,6 @@ ul {
                         color: nth($colores , 4);
                         padding: 1px 12px;
                         font-weight: bold;
-                        cursor: pointer;
                         transition: all 0.3s ease;
                         border-radius: 20px;
                         border: 1px solid nth($colores , 4);
@@ -56,24 +80,52 @@ ul {
                     }
                 }
 
-                hr {
-                    max-width: 100%;
-                    width: 90px;
-                    margin: 10px 0;
-                    border-top-width: 3px;
-                    border-top-style: solid;
-                    border-top-color: nth($colores , 1);
-                    border-left-width: 0px;
-                    border-right-width: 0px;
-                    border-bottom-width: 0px;
-                    opacity: 1;
+                .sm-icons {
+                    li {
+                        display: inline-block;
+                        margin: 5px;
+                
+                        a {
+                            i {
+                                color: nth($colores , 2);
+                                font-size: 24px;
+                
+                                &:hover {
+                                    color: nth($colores , 4);
+                                }
+                            }
+                        }
+                
+                    }
                 }
 
-                h3 {
-                    color: nth($colores , 5);
-                    font-size: 21px;
-                    padding-top: 10px;
+                .navegacion-list {
+                    list-style: none;
+                
+                    li {
+                        a {
+                            text-decoration: none;
+                            color: nth($colores , 4);
+                            transition: all 0.5s;
+                
+                            &:hover {
+                                text-decoration: underline;
+                                background-color: nth($colores , 12);
+                            }
+                        }
+                    }
+                }
 
+                .info-contacto-list {
+                    li {
+                        list-style: none;
+                
+                        i {
+                            color: nth($colores , 2);
+                            font-size: 18px;
+                            padding: 10px;
+                        }
+                    }
                 }
             }
         }
@@ -83,56 +135,14 @@ ul {
 
 
 
-.sm-icons {
-    li {
-        display: inline-block;
-        margin: 5px;
-
-        a {
-            i {
-                color: nth($colores , 2);
-                font-size: 24px;
-
-                &:hover {
-                    color: nth($colores , 4);
-                }
-            }
-        }
-
-    }
-}
-
-
-.navegacion-list {
-    list-style: none;
-
-    li {
-        a {
-            text-decoration: none;
-            color: nth($colores , 4);
-            transition: all 0.5s;
-
-            &:hover {
-                text-decoration: underline;
-                background-color: nth($colores , 12);
-            }
-        }
-    }
-}
 
 
 
-.info-contacto-list {
-    li {
-        list-style: none;
 
-        i {
-            color: nth($colores , 2);
-            font-size: 18px;
-            padding: 10px;
-        }
-    }
-}
+
+
+
+
 
 
 
@@ -161,121 +171,3 @@ ul {
         }
     }
 }
-
-
-
-/* elimina imagen logo del footer para mobile */
-// @media all and (max-width: 768px) {
-//     .logo-leon {
-//         display: none;
-//     }
-
-//     .footer_copy small {
-//         text-align: center;
-//     }
-// }
-
-/*********** END FOOTER copy***********/
-
-// .logo-leon {
-//     width: 70px;
-// }
-
-// .footer_container {
-
-//     width: 70%;
-//     min-height: 200px;
-//     display: flex;
-//     justify-content: center;
-//     align-items: center;
-// }
-
-// .row {
-//     display: flex;
-//     flex-wrap: wrap;
-//     justify-content: space-between;
-//     align-items: flex-start;
-//     width: 100%;
-// }
-
-// .col {
-//     min-width: 250px;
-//     color: nth($colores , 8);
-//     max-width: 380px;
-// }
-
-// .col h3 {
-//     color: nth($colores , 5);
-//     font-size: 21px;
-//     padding-top: 10px;
-// }
-
-// .sm-icons li {
-//     display: inline-block;
-//     margin: 5px;
-// }
-
-// .sm-icons li a i {
-//     color: nth($colores , 2);
-//     font-size: 24px;
-// }
-
-// .sm-icons li a i:hover {
-//     color: nth($colores , 4);
-// }
-
-// .navegacion-list li,
-// .info-contacto-list li {
-//     list-style: none;
-// }
-
-// .navegacion-list li a {
-//     text-decoration: none;
-//     color: nth($colores , 4);
-//     transition: all 0.5s;
-// }
-
-// .navegacion-list li a:hover {
-//     text-decoration: underline;
-//     background-color: nth($colores , 12);
-// }
-
-// .info-contacto-list li i {
-//     color: nth($colores , 2);
-//     font-size: 18px;
-//     padding: 10px;
-// }
-
-// .line_footer {
-//     max-width: 100%;
-//     width: 90px;
-//     margin: 10px 0;
-//     border-top-width: 3px;
-//     border-top-style: solid;
-//     border-top-color: nth($colores , 1);
-//     border-left-width: 0px;
-//     border-right-width: 0px;
-//     border-bottom-width: 0px;
-//     opacity: 1;
-// }
-
-// .email_enviar_btn {
-//     margin-top: 10px;
-//     color: nth($colores , 4);
-//     padding: 1px 12px;
-//     font-weight: bold;
-//     cursor: pointer;
-//     transition: all 0.3s ease;
-//     border-radius: 20px;
-//     border: 1px solid black;
-//     background: nth($colores , 1);
-//     text-align: center;
-//     text-decoration: none;
-//     font-size: 14px;
-// }
-
-// .email_enviar_btn:hover {
-//     background: nth($colores , 4);
-//     color: nth($colores , 11);
-//     border: 1px solid nth($colores , 2);
-// }
