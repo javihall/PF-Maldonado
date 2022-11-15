@@ -1,3 +1,6 @@
+@import "base/listas";
+@import "base/extends";
+
 @import "components/header";
 @import "components/footer";
 @import "components/home";
@@ -5,6 +8,3 @@
 @import "components/contacto";
 @import "components/login-registrate";
 @import "components/pdp1";
-
-@import "base/listas";
-@import "base/extends";

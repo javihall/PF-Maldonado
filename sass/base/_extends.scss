@@ -42,10 +42,21 @@
 }
 
 %btn-submit-google {
-    width: 60%;
     padding: 12px 19px;
     margin-bottom: 20px;
     border-radius: 5px;
     border: none;
     font-weight: bold;
+}
+
+%btn-google-hover {
+    outline: 2px solid nth($colores , 19);
+    background-color: nth($colores , 4);
+    color:nth($colores , 11) ;
+}
+
+%btn-submit-hover {
+    outline: 2px solid nth($colores , 20);
+    background-color: nth($colores , 4);
+    color:nth($colores , 11) ;
 }

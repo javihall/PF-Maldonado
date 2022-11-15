@@ -42,12 +42,86 @@
 }
 
 .contenedor-login-registrate .containter-form-registrate form button, .contenedor-login-registrate .containter-form-login form .contenedores-botones .login-google-submit-btn, .contenedor-login-registrate .containter-form-login form .contenedores-botones .login-submit-btn {
-  width: 60%;
   padding: 12px 19px;
   margin-bottom: 20px;
   border-radius: 5px;
   border: none;
   font-weight: bold;
+}
+
+.contenedor-login-registrate .containter-form-login form .contenedores-botones .login-google-submit-btn:hover {
+  outline: 2px solid #1AAE9F;
+  background-color: #030303;
+  color: #F9F9F9;
+}
+
+.contenedor-login-registrate .containter-form-registrate form button:hover, .contenedor-login-registrate .containter-form-login form .contenedores-botones .login-submit-btn:hover {
+  outline: 2px solid #6558F5;
+  background-color: #030303;
+  color: #F9F9F9;
+}
+
+/* hacer listas de variables*/
+/*20*/
+.prod-relacionado-seccion hr, .container-contacto-info hr, .flexbox-productos-section hr, .seccion-grid-categorias hr, .main .main-containter section .containter-main-banner hr {
+  max-width: 100%;
+  width: 90px;
+  margin: 10px 0;
+  border-top-width: 3px;
+  border-top-style: solid;
+  border-top-color: #ffd8cb;
+  border-left-width: 0px;
+  border-right-width: 0px;
+  border-bottom-width: 0px;
+  opacity: 1;
+}
+
+.flexbox-productos-section h2, .seccion-grid-categorias h2 {
+  margin: 10px 0;
+  color: #030303;
+  font-size: 48px;
+  line-height: 1.4;
+  text-align: center;
+}
+
+.seccion-grid-categorias .grid_category .category4, .seccion-grid-categorias .grid_category .category3, .seccion-grid-categorias .grid_category .category2, .seccion-grid-categorias .grid_category .category1 {
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  background-size: cover;
+  background-position: center;
+}
+
+.header-contenedor nav div div ul li .current_page {
+  border-bottom: 2px solid #030303;
+}
+
+.d-flex button:focus, .d-flex button:hover {
+  background-color: #030303;
+  color: #F9F9F9;
+  border: #F9F9F9;
+}
+
+.contenedor-login-registrate .containter-form-registrate form button, .contenedor-login-registrate .containter-form-login form .contenedores-botones .login-google-submit-btn, .contenedor-login-registrate .containter-form-login form .contenedores-botones .login-submit-btn {
+  padding: 12px 19px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: none;
+  font-weight: bold;
+}
+
+.contenedor-login-registrate .containter-form-login form .contenedores-botones .login-google-submit-btn:hover {
+  outline: 2px solid #1AAE9F;
+  background-color: #030303;
+  color: #F9F9F9;
+}
+
+.contenedor-login-registrate .containter-form-registrate form button:hover, .contenedor-login-registrate .containter-form-login form .contenedores-botones .login-submit-btn:hover {
+  outline: 2px solid #6558F5;
+  background-color: #030303;
+  color: #F9F9F9;
 }
 
 * {
@@ -178,12 +252,23 @@
 }
 
 .contenedor-login-registrate .containter-form-registrate form button, .contenedor-login-registrate .containter-form-login form .contenedores-botones .login-google-submit-btn, .contenedor-login-registrate .containter-form-login form .contenedores-botones .login-submit-btn {
-  width: 60%;
   padding: 12px 19px;
   margin-bottom: 20px;
   border-radius: 5px;
   border: none;
   font-weight: bold;
+}
+
+.contenedor-login-registrate .containter-form-login form .contenedores-botones .login-google-submit-btn:hover {
+  outline: 2px solid #1AAE9F;
+  background-color: #030303;
+  color: #F9F9F9;
+}
+
+.contenedor-login-registrate .containter-form-registrate form button:hover, .contenedor-login-registrate .containter-form-login form .contenedores-botones .login-submit-btn:hover {
+  outline: 2px solid #6558F5;
+  background-color: #030303;
+  color: #F9F9F9;
 }
 
 /* correccion para bootstrap */
@@ -354,12 +439,23 @@ ul {
 }
 
 .contenedor-login-registrate .containter-form-registrate form button, .contenedor-login-registrate .containter-form-login form .contenedores-botones .login-google-submit-btn, .contenedor-login-registrate .containter-form-login form .contenedores-botones .login-submit-btn {
-  width: 60%;
   padding: 12px 19px;
   margin-bottom: 20px;
   border-radius: 5px;
   border: none;
   font-weight: bold;
+}
+
+.contenedor-login-registrate .containter-form-login form .contenedores-botones .login-google-submit-btn:hover {
+  outline: 2px solid #1AAE9F;
+  background-color: #030303;
+  color: #F9F9F9;
+}
+
+.contenedor-login-registrate .containter-form-registrate form button:hover, .contenedor-login-registrate .containter-form-login form .contenedores-botones .login-submit-btn:hover {
+  outline: 2px solid #6558F5;
+  background-color: #030303;
+  color: #F9F9F9;
 }
 
 .main {
@@ -662,12 +758,23 @@ ul {
 }
 
 .contenedor-login-registrate .containter-form-registrate form button, .contenedor-login-registrate .containter-form-login form .contenedores-botones .login-google-submit-btn, .contenedor-login-registrate .containter-form-login form .contenedores-botones .login-submit-btn {
-  width: 60%;
   padding: 12px 19px;
   margin-bottom: 20px;
   border-radius: 5px;
   border: none;
   font-weight: bold;
+}
+
+.contenedor-login-registrate .containter-form-login form .contenedores-botones .login-google-submit-btn:hover {
+  outline: 2px solid #1AAE9F;
+  background-color: #030303;
+  color: #F9F9F9;
+}
+
+.contenedor-login-registrate .containter-form-registrate form button:hover, .contenedor-login-registrate .containter-form-login form .contenedores-botones .login-submit-btn:hover {
+  outline: 2px solid #6558F5;
+  background-color: #030303;
+  color: #F9F9F9;
 }
 
 /* texto pre acordion */
@@ -834,12 +941,23 @@ ul {
 }
 
 .contenedor-login-registrate .containter-form-registrate form button, .contenedor-login-registrate .containter-form-login form .contenedores-botones .login-google-submit-btn, .contenedor-login-registrate .containter-form-login form .contenedores-botones .login-submit-btn {
-  width: 60%;
   padding: 12px 19px;
   margin-bottom: 20px;
   border-radius: 5px;
   border: none;
   font-weight: bold;
+}
+
+.contenedor-login-registrate .containter-form-login form .contenedores-botones .login-google-submit-btn:hover {
+  outline: 2px solid #1AAE9F;
+  background-color: #030303;
+  color: #F9F9F9;
+}
+
+.contenedor-login-registrate .containter-form-registrate form button:hover, .contenedor-login-registrate .containter-form-login form .contenedores-botones .login-submit-btn:hover {
+  outline: 2px solid #6558F5;
+  background-color: #030303;
+  color: #F9F9F9;
 }
 
 .breadcrumb-contenedor {
@@ -978,12 +1096,23 @@ ul {
 }
 
 .contenedor-login-registrate .containter-form-registrate form button, .contenedor-login-registrate .containter-form-login form .contenedores-botones .login-google-submit-btn, .contenedor-login-registrate .containter-form-login form .contenedores-botones .login-submit-btn {
-  width: 60%;
   padding: 12px 19px;
   margin-bottom: 20px;
   border-radius: 5px;
   border: none;
   font-weight: bold;
+}
+
+.contenedor-login-registrate .containter-form-login form .contenedores-botones .login-google-submit-btn:hover {
+  outline: 2px solid #1AAE9F;
+  background-color: #030303;
+  color: #F9F9F9;
+}
+
+.contenedor-login-registrate .containter-form-registrate form button:hover, .contenedor-login-registrate .containter-form-login form .contenedores-botones .login-submit-btn:hover {
+  outline: 2px solid #6558F5;
+  background-color: #030303;
+  color: #F9F9F9;
 }
 
 .breadcrumb-contenedor {
@@ -1018,6 +1147,7 @@ ul {
 }
 .contenedor-login-registrate .containter-form-login form .contenedores-botones .login-submit-btn {
   background-color: #6558F5;
+  width: 60%;
 }
 @media all and (max-width: 768px) {
   .contenedor-login-registrate .containter-form-login form .contenedores-botones .login-submit-btn {
@@ -1026,6 +1156,7 @@ ul {
 }
 .contenedor-login-registrate .containter-form-login form .contenedores-botones .login-google-submit-btn {
   background-color: #1AAE9F;
+  width: 60%;
 }
 @media all and (max-width: 768px) {
   .contenedor-login-registrate .containter-form-login form .contenedores-botones .login-google-submit-btn {
@@ -1078,6 +1209,7 @@ ul {
 }
 .contenedor-login-registrate .containter-form-registrate form button {
   background-color: #6558F5;
+  width: 60%;
 }
 @media all and (max-width: 768px) {
   .contenedor-login-registrate .containter-form-registrate form button {
@@ -1129,12 +1261,23 @@ ul {
 }
 
 .contenedor-login-registrate .containter-form-login form .contenedores-botones .login-submit-btn, .contenedor-login-registrate .containter-form-login form .contenedores-botones .login-google-submit-btn, .contenedor-login-registrate .containter-form-registrate form button {
-  width: 60%;
   padding: 12px 19px;
   margin-bottom: 20px;
   border-radius: 5px;
   border: none;
   font-weight: bold;
+}
+
+.contenedor-login-registrate .containter-form-login form .contenedores-botones .login-google-submit-btn:hover {
+  outline: 2px solid #1AAE9F;
+  background-color: #030303;
+  color: #F9F9F9;
+}
+
+.contenedor-login-registrate .containter-form-login form .contenedores-botones .login-submit-btn:hover, .contenedor-login-registrate .containter-form-registrate form button:hover {
+  outline: 2px solid #6558F5;
+  background-color: #030303;
+  color: #F9F9F9;
 }
 
 .breadcrumb-contenedor {
@@ -1339,58 +1482,6 @@ ul {
 .prod-relacionado-seccion .section_producto_container .producto_container .product_card .product-link:hover {
   background-color: #f7c2b0;
   color: #030303;
-  font-weight: bold;
-}
-
-/* hacer listas de variables*/
-/*20*/
-.main .main-containter section .containter-main-banner hr, .seccion-grid-categorias hr, .flexbox-productos-section hr, .container-contacto-info hr, .prod-relacionado-seccion hr {
-  max-width: 100%;
-  width: 90px;
-  margin: 10px 0;
-  border-top-width: 3px;
-  border-top-style: solid;
-  border-top-color: #ffd8cb;
-  border-left-width: 0px;
-  border-right-width: 0px;
-  border-bottom-width: 0px;
-  opacity: 1;
-}
-
-.seccion-grid-categorias h2, .flexbox-productos-section h2 {
-  margin: 10px 0;
-  color: #030303;
-  font-size: 48px;
-  line-height: 1.4;
-  text-align: center;
-}
-
-.seccion-grid-categorias .grid_category .category1, .seccion-grid-categorias .grid_category .category2, .seccion-grid-categorias .grid_category .category3, .seccion-grid-categorias .grid_category .category4 {
-  border-radius: 5px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-decoration: none;
-  background-size: cover;
-  background-position: center;
-}
-
-.header-contenedor nav div div ul li .current_page {
-  border-bottom: 2px solid #030303;
-}
-
-.d-flex button:hover, .d-flex button:focus {
-  background-color: #030303;
-  color: #F9F9F9;
-  border: #F9F9F9;
-}
-
-.contenedor-login-registrate .containter-form-login form .contenedores-botones .login-submit-btn, .contenedor-login-registrate .containter-form-login form .contenedores-botones .login-google-submit-btn, .contenedor-login-registrate .containter-form-registrate form button {
-  width: 60%;
-  padding: 12px 19px;
-  margin-bottom: 20px;
-  border-radius: 5px;
-  border: none;
   font-weight: bold;
 }
 
